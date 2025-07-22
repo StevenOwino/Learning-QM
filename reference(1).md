@@ -259,10 +259,7 @@ $ \Psi(\mathbf r) |_\ell$ = $[\mathbf A_\ell \mathbf j_\ell \mathbf(kr) + \mathb
 
 
 
-
-```python
 Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!
-```
 
 ## Noteable parsing practices: Certain nested fractions, and bottom underlining braces, not supported.
 ## Only on industrial software. The letters in bold are vectors! Notebook is parsing on jupyter notebook/lab, code editor, python3, and Ju note. 
