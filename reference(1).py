@@ -170,7 +170,7 @@
 # $\bullet$ 49### scattering on the half line: $ \Psi(\mathbf x)$ = $ e^{1 \delta} \sin(\mathbf {kx} + \delta)$, $ \Psi_s(\mathbf x)$ = $ e^{i \delta} \sin \delta e^{ikx}$, $\mathbf x$ > $ \mathbf R$.  
 # $\bullet$ 44### time delay: $\vartriangle t$ = $ 2\hbar \delta'( \mathbf E_0)$.  
 # $\bullet$ 50### Levinsons' theorem: $ \mathit N_b$ = $\frac{1}{\pi} ((\delta)(0) - \delta(\infty))$.  
-# $\bullet$ 51### 1resonance, Breit-Wigner: $ | \Psi_s |^2$ $\simeq$ $\frac{1/4 \Gamma^2} {(\mathbf E - \mathbf E_\alpha)^2 + \frac{1}{4} \Gamma^2}$.                                                                                                                          
+# $\bullet$ 51### resonance, Breit-Wigner: $ | \Psi_s |^2$ $\simeq$ $\frac{1/4 \Gamma^2} {(\mathbf E - \mathbf E_\alpha)^2 + \frac{1}{4} \Gamma^2}$.                                                                                                                          
 # $\bullet$ 52### scattering in 3D: $ \Psi(\mathbf r)$ = $ \varphi(\mathbf r) + \Psi_s(\mathbf r)$ $\simeq$ $e^{ikz} + f_k(\theta, \phi)$ $ \frac{e^{ikr}}{\mathbf r}$, $\mathbf r$ $\gg$ a.  
 # $ \frac{d \sigma}{d \Omega}$ = $ |f_k(\theta, \phi) |^2$, $ \sigma$ = $\int |f_k(\theta, \phi)|^2 d \Omega$.  
 # $\bullet$ 53### Rayleigh: $e^{ikz}$ = ${\sqrt 4 \pi} \sum_{\ell = 0}^\infty {\sqrt{2 \ell + 1}}$ $i^\ell \mathbf Y_{\ell 0}(\theta) j_\ell(kr)$.  
@@ -252,7 +252,11 @@
 # 
 # 
 
-# Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!
+# In[ ]:
+
+
+Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!
+
 
 # ## Noteable parsing practices: Certain nested fractions, and bottom underlining braces, not supported.
 # ## Only on industrial software. The letters in bold are vectors! Notebook is parsing on jupyter notebook/lab, code editor, python3, and Ju note. 
