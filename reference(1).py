@@ -7,6 +7,8 @@
 2/0
 
 
+# If (a) $\neq$ 0, there is no rational number(Q), where (b) $\times$ 0 = (a), can be fulfilled. 
+
 # **Math**
 
 # $\bullet$
@@ -252,10 +254,10 @@
 
 # Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!
 
-# ## Noteable parsing practices: Psi_tilde. certain nested fractions, and bottom underlining braces, not supported.
-# ## Only on industrial software. Notebook is parsing on jupyter notebook/lab, code editor, python3, and Ju note. 
+# ## Noteable parsing practices: Certain nested fractions, and bottom underlining braces, not supported.
+# ## Only on industrial software. The letters in bold are vectors! Notebook is parsing on jupyter notebook/lab, code editor, python3, and Ju note. 
 # ## These are notes/references, no functional code! QM(Quantum Mechanics), MP(Mathematical Physics), PHY(Physics),
-# ## M(Mathematics) and PROG(Programming).
+# ## M(Mathematics), and PROG(Programming).
 
 # Abstraction is forever a task for the human mind.
 #                              
@@ -356,6 +358,7 @@
 # 102. **The Art of Computer Programming - Donal E. Knuth_PROG**
 # 103. **Differential Topology - John Willard Milnor_M** 
 # 104. **The principle of relativity - H.A.Lorentz, A.Einstein, H. Minkowskiski, and H.Weyl_MP**
+# 105. **General Theory of Relativity - P.A.M Dirac_QM**
 
 # $L^\angle$
 
