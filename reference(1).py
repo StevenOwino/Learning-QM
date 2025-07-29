@@ -7,7 +7,7 @@
 2/0
 
 
-# If (a) $\neq$ 0, there is no rational number(Q), where (b) $\times$ 0 = (a), can be fulfilled. 
+# If (a) $\neq$ 0, there is no rational number($\mathbb Q$), where (b) $\times$ 0 = (a), can be fulfilled. 
 
 # **Math**
 
@@ -35,8 +35,8 @@
 # $\bullet$ 3### Schr$\ddot{o}$dinger equation: i $\hbar$ $\frac{\partial \psi}{\partial(t)}$ (x,t) =  $(\frac{- i \hbar^2}{2 m}$ $\nabla^2$ + V (x,t)) $\psi (x,t)$,  
 # $\frac{\partial}{\partial(t)}$ $\rho (x,t)$ + $\nabla$ $\cdot$ $\mathbf J$ (x,t)  = 0, $\rho$ (x,t) = | $\Psi (x,t) |^2$, $\mathbf J $ (x,t) = $\frac{\hbar} {m}$ Im $[\psi^*$ $\nabla \psi]$.  
 # $\bullet$ 4### Fourier transforms: $\psi x$ = $\frac{1}{\sqrt2 \pi}$ $\int{dk}$ $\phi$ (k) $e^{ikx}$, $\Phi (k)$ = $\frac{1}{\sqrt2\pi}$ $\int{dx}$ $\Psi$ (x) $e^{-ikx}$, $\int${dx}| $\Psi (x) |^2$ = $\int {dk}$ | $\Phi k |^2$.  
-# $\frac{1}{2\pi}$ $\int_{-\infty}^{\infty} e^{ikx}{dx}$ = $\delta(k)$, $\frac{1}{(2\pi)^3}$ $\int e^{ik \cdot x}(d)^3{x}$ = $\delta^{(3)}(k)$.  
-# $\int_{-\infty}^{\infty} dx \exp(-{ax}^2 + bx)$ = $\frac{\sqrt \pi}{\sqrt a}$ $\exp (\frac{b^2}{4a}$), when $\Re$(a) > 0.  
+# $\frac{1}{2\pi}$ $\int_ {-\infty}^{\infty}$ $e^{ikx}{dx}$ = $\delta(k)$, $\frac{1}{(2\pi)^3}$ $\int$ $e^{ik}$ $\cdot$ ${x}(d)^3{x}$ = $\delta^{(3)}(k)$.  
+#        $\int_{-\infty}^{\infty}$ dx  $\exp$ $(-{ax}^2 + bx)$ = $\frac{\sqrt \pi}{\sqrt a}$ $\exp (\frac{b^2}{4a}$), when $\Re$(a) > 0.  
 # $\bullet$ 5### expectation value: $\langle\hat{\mathbf Q} \rangle$ $\equiv$ $\langle\psi, \hat{\mathbf Q}\psi \rangle$, $i \hbar \frac{d}{dt} \langle \hat{\mathbf Q \rangle}$ = $\langle[ \hat{\mathbf Q},{\mathbf H}] \rangle$, $\hat{\mathbf Q}$ time idependent.  
 # $\bullet$ 6### uncertainty: $\vartriangle{A} \equiv || (\hat{A} - \langle \hat{A} \rangle \mathbb{1}) \psi ||$,   
 # $(\vartriangle{A})^2$ = $\langle \hat{A}^2 \rangle - \langle \hat{A} \rangle^2 \geq$ 0.  
@@ -57,7 +57,7 @@
 # $[B,e^A]$ = [$B,A]e^A$, if [ [A,[A,B]] = 0,  
 # $e^{A + B}$ = $e^A e^B e^{-\frac{1}{2}|A,B|}$ = $e^B e^A e^{\frac{1}{2}[A,B]}$ if [[A,B],A] = [[A,B],B] = 0.  
 # $\bullet$ 13### matrix exponential: $e^{i M \theta}$ = $\mathbb 1 \cos \theta$ + i M $\sin \theta$,  
-# $\bullet$ 14### index manipulation: $\mathbf a \cdot \mathbf b$ = $a_i b_i$, $\delta_{ij} B_j$ = $B_i$, $\delta_{ii}$ = 3, ${(\mathbf a \times \mathbf b)}_i$ = $\epsilon_{ijk} $ $\mathbf a_j \mathbf b_k$, $\epsilon$ 123 = 1 .  
+# $\bullet$ 14### index manipulation: $\mathbf a \cdot \mathbf b$ = $a_i b_i$, $\delta_{ij} B_j$ = $B_i$, $\delta_{ii}$ = 3, ${(\mathbf a \times \mathbf b)}_i$ = $\epsilon_{ijk} \mathbf a_j \mathbf b_k$, $\epsilon$ 123 = 1 .  
 # $\epsilon_{ijk} \epsilon_{ipq}$ = $\delta_{jp} \delta_{kq}$ - $\delta_{jp} \delta_{kp}$,  
 # $\epsilon_{ijk} \epsilon_{ijq}$ = 2 $\delta_{kq}$.  
 # $\bullet$ 15### linear algebra: matrix representation in the basis $(v_{1,...,}v_n)$: $Tv_i$ = $\sum_k $ $T_{kj}$ $v_k$.  
@@ -236,21 +236,6 @@
 # 
 # 
 #                                     
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
 
 # Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!
 
@@ -359,6 +344,9 @@
 # 103. **Differential Topology - John Willard Milnor_M** 
 # 104. **The principle of relativity - H.A.Lorentz, A.Einstein, H. Minkowskiski, and H.Weyl_MP**
 # 105. **General Theory of Relativity - P.A.M Dirac_QM**
+# 106. **Numerical Methods Using Kotlin_For Data Science, Analysis, and Engineering - Haksun Li_M & PROG**
+# 107. **Stastical Rethinking - Richard McElreath_M & PROG**
+# 108. **Neural Networks and Learning Machines - Simon Haykin_M & PROG**
 
 # $L^\angle$
 
@@ -386,7 +374,7 @@
 
 # $ \tilde \psi$
 
-# In[ ]:
+# In[25]:
 
 
 
