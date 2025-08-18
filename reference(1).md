@@ -43,7 +43,7 @@ $\bullet$ 6### uncertainty: $\vartriangle{A} \equiv || (\hat{A} - \langle \hat{A
 $(\vartriangle{A})^2$ = $\langle \hat{A}^2 \rangle - \langle \hat{A} \rangle^2 \geq$ 0.  
 $\vartriangle{A} \vartriangle{B}$ $\geq$ | $\langle \psi$ $\mid$ $\frac{1}{2i}$ $[\hat{A},\hat{B}]$ $\mid$ $\psi$ $\rangle$ |,
 
-$\bullet$ 7### saturarion: $(\hat{B} - \langle \hat{B} \rangle \mathbb1) | \psi \rangle$ = i $\lambda (\hat{A} - \langle \hat{A} \mathbb1) | \psi \rangle$, $\lambda \in \Re$.  
+$\bullet$ 7### saturation: $(\hat{B} - \langle \hat{B} \rangle \mathbb1) | \psi \rangle$ = i $\lambda (\hat{A} - \langle \hat{A} \mathbb1) | \psi \rangle$, $\lambda \in \Re$.  
 $\vartriangle{x} \vartriangle{p} \geq \frac{\hbar}{2}$. For $\psi$ ~ $\exp(- \frac{1}{4} \frac{x^2}{\vartriangle^2})$,  
 $\vartriangle{x} = \vartriangle$ and $\vartriangle{p} = \frac{\hbar}{2 \vartriangle}$.  
 $\vartriangle{H} \vartriangle{t} \geq \frac{\hbar}{2}$, $\vartriangle{t}$ $\equiv$ $\frac{\vartriangle Q } { |d \langle Q \rangle / {dt} |}$.  
