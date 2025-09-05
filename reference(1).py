@@ -48,7 +48,7 @@
 # $(\vartriangle{A})^2$ = $\langle \hat{A}^2 \rangle - \langle \hat{A} \rangle^2 \geq$ 0.  
 # $\vartriangle{A} \vartriangle{B}$ $\geq$ | $\langle \psi$ $\mid$ $\frac{1}{2i}$ $[\hat{A},\hat{B}]$ $\mid$ $\psi$ $\rangle$ |,
 
-# $\bullet$ 7### saturarion: $(\hat{B} - \langle \hat{B} \rangle \mathbb1) | \psi \rangle$ = i $\lambda (\hat{A} - \langle \hat{A} \mathbb1) | \psi \rangle$, $\lambda \in \Re$.  
+# $\bullet$ 7### saturation: $(\hat{B} - \langle \hat{B} \rangle \mathbb1) | \psi \rangle$ = i $\lambda (\hat{A} - \langle \hat{A} \mathbb1) | \psi \rangle$, $\lambda \in \Re$.  
 # $\vartriangle{x} \vartriangle{p} \geq \frac{\hbar}{2}$. For $\psi$ ~ $\exp(- \frac{1}{4} \frac{x^2}{\vartriangle^2})$,  
 # $\vartriangle{x} = \vartriangle$ and $\vartriangle{p} = \frac{\hbar}{2 \vartriangle}$.  
 # $\vartriangle{H} \vartriangle{t} \geq \frac{\hbar}{2}$, $\vartriangle{t}$ $\equiv$ $\frac{\vartriangle Q } { |d \langle Q \rangle / {dt} |}$.  
@@ -355,6 +355,9 @@
 # 109. **100 instructive-based Physics Examples_Volumes I,II, and III - Chris McMullen_MP**
 # 110. **Introduction to Analytic Number Theory - Tom Apostol_M**
 # 111. **Modular functions and Dirichlet Series in Number Theory - Tom M. Apostol_M**
+# 112. **The theory of relativity - Roger Penrose, Robert Geroch, and David C. Cassidy_QM**
+# 113. **Lecture notes on the General Theory of Relativity_From Newtons' Attractive Gravity to the Repulsive Gravity of Vacuum Energy - Oyvid Gron_QM**
+# 114. **Gravitation - Charles W. Misner, Kip S. Thorne, John Archibald Wheeler and John W_QM**                          
 
 # $L^\angle$
 

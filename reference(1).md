@@ -350,6 +350,9 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 109. **100 instructive-based Physics Examples_Volumes I,II, and III - Chris McMullen_MP**
 110. **Introduction to Analytic Number Theory - Tom Apostol_M**
 111. **Modular functions and Dirichlet Series in Number Theory - Tom M. Apostol_M**
+112. **The theory of relativity - Roger Penrose, Robert Geroch, and David C. Cassidy_QM**
+113. **Lecture notes on the General Theory of Relativity_From Newtons' Attractive Gravity to the Repulsive Gravity of Vacuum Energy - Oyvid Gron_QM**
+114. **Gravitation - Charles W. Misner, Kip S. Thorne, John Archibald Wheeler and John W_QM**                          
 
 $L^\angle$
 
