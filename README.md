@@ -3,4 +3,4 @@ Curvature is flattening out coordinates(transforming a metric to a  2D rectiline
 I encountered hiccups writing some nested fractions, and certain functions.
 How the Linux kernel bypasses the windows tpm module on BIOS boot menu, only the coding can explain{The machine memory area usage map of the Linux kernel does not use BIOS functions, nor does it use the
 interrupt vector table set by the BIOS} https://download.oldlinux.org/ECLK-5.0-WithCover.pdf
-Here's an alternative online link where the formulas render correctly(MUST login to view or download)...https://colab.research.google.com/drive/18R7SIXyqluShkavVoXW5ZnaoiA1lvWoG?usp=sharing
+Here's an alternative online link where the formulas render correctly(MUST login to view or download)...https://drive.google.com/file/d/1fedqISI4dt2mQv6Yi7JW0N55NCdrvewT/view?usp=sharing
