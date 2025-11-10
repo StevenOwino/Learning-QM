@@ -243,6 +243,8 @@ These are notes/references, 1% functional code! QM(Quantum Mechanics), MP(Mathem
 <a id='plot'></a>  
 
 
+
+```python
 Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsensical answers, and bogus non-differentiable functions. This is the task for the human mind, to see this truth, and preserve it.
 <a id='plot'></a> 
 
@@ -291,7 +293,7 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 42. **Lost in Math - Sabine Hossenfelder_PHY**
 43. **Differential and integral calculus(Volume I and II) - N. Piskunov_M**
 44. **Mathematical Methods in the Physical Sciences - Mary L. Boas_M**
-45. **Relativivitic quantum mechanics and relativistic quantum fields - James D. Bjorken and Sidney D. Drell_QM**
+45. **Relativistic quantum mechanics and relativistic quantum fields - James D. Bjorken and Sidney D. Drell_QM**
 46. **A course of modern analysis - E.T.Whittaker and G.N.Watson_M**
 47. **CRC Standard Mathematical Tables and Formulae - Daniel Zwillinger_M**
 48. **Introductory Mathematics for Engineers - A.D.Myskis_M**
@@ -299,7 +301,7 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 50. **Principles of Quantum Mechanics(2nd Edition) - R. Shankar_QM**
 60. **Singularity theory and gravitation lensing - Arlie O. Peters, Harold Levine and Joachim Wambsganss_QM**
 61. **Orthogonal Functions(translated by Ainsley H. Diamond_M**
-62. **Algorthms and Discreet Applied Mathematics_PROG & M**
+62. **Algorithms and Discreet Applied Mathematics - Amitaba Bagchi and Rahul Muthu_PROG & M**
 63. **Gravitational N-Body Simulatioms_Tools and Algorithms - Sverre J. Aarseth_QM**
 64. **Mathematical computation with SageMath - Paul Zimmermann_PROG & M**
 65. **Classical and Quantum Computation - A.Yu Kitaev_PROG & M**
@@ -352,7 +354,19 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 111. **Modular functions and Dirichlet Series in Number Theory - Tom M. Apostol_M**
 112. **The theory of relativity - Roger Penrose, Robert Geroch, and David C. Cassidy_QM**
 113. **Lecture notes on the General Theory of Relativity_From Newtons' Attractive Gravity to the Repulsive Gravity of Vacuum Energy - Oyvid Gron_QM**
-114. **Gravitation - Charles W. Misner, Kip S. Thorne, John Archibald Wheeler and John W_QM**                          
+114. **Gravitation - Charles W. Misner, Kip S. Thorne, John Archibald Wheeler, and John W_QM** 
+115. **String Theory_Volumes I and II - Joseph Polchinski_MP**
+116. **The Geometry of Physics_An Introduction_3rd Edition - Theodore Frankel_MP**
+117. **Reviews in Number Theory - William J. LeVeque_M**
+118. **History of Theory of Numbers - L.E. Dickson_M**
+119. **Handbook of Quantum Gravity - Cosimo Bambi, Leonardo Modesto, and llya Shapiro_MP**
+120. **Algebraic Theory of Numbers - Hermann Weyl_M**
+121. **Physics - John D. Cutnell and Kenneth W. Johnson_PHY**
+122. **Quantum Field Theory_A Modern Introduction - Michio Kaku_QM**
+123. **Mach's Principle_From Newtons Bucket to Quantum Gravity - Julian Barbour and Herbert Pfister_QM**
+124. **The Princeton Companion to Mathematics - Timothy Gowers_M**
+125. **Categories for the Working Mathematician - Saunders Mac Lane_M**
+```
 
 $L^\angle$
 
