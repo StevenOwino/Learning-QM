@@ -372,6 +372,9 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 123. **Mach's Principle_From Newtons Bucket to Quantum Gravity - Julian Barbour and Herbert Pfister_QM**
 124. **The Princeton Companion to Mathematics - Timothy Gowers_M**
 125. **Categories for the Working Mathematician - Saunders Mac Lane_M**
+126. **Topology - Point-Set and Geometric - Paul L. Shick_M**
+127. **Introduction to Electrodynamics - David J. Giffiths_QM**
+128. **Quantum Field Theory - Mark Srednicki_QM**
 
 
 # $L^\angle$
