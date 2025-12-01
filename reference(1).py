@@ -411,6 +411,7 @@ plt.show()
 # 130. **Theory of combinations of observations least subject to error(Translated by G.W.Stewart) - Carl Friedrich Gauss_M**
 # 131. **Elliptic Operators and Lie Groups - D. W. Robinson_M**
 # 132. **Galois Theory - David A. Cox_M**
+# 133. **Quantum Field Theory - Mark Srednicki_QM**
 
 # $L^\angle$
 
