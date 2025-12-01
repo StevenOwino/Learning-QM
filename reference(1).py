@@ -13,6 +13,39 @@
 
 # $\bullet$
 
+# In[1]:
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the function representing the curve
+def folium_of_descartes(x, y):
+    return x**3 + y**3 - 3*x*y
+
+# Create a grid of x and y values
+x = np.linspace(-4, 4, 400)
+y = np.linspace(-4, 4, 400)
+X, Y = np.meshgrid(x, y)
+
+# Calculate the function values for each point in the grid
+Z = folium_of_descartes(X, Y)
+
+# Plot the contour where Z is approximately zero
+plt.figure(figsize=(4, 4))
+plt.contour(X, Y, Z, levels=[0], colors='blue')
+
+# Add labels and title
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Graph of x^3 + y^3 = 3xy (Folium of Descartes)')
+plt.grid(True)
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.gca().set_aspect('equal', adjustable='box') # Ensure equal scaling for x and y axes
+plt.show()
+
+
 # $\frac{\frac{\sin a}{\cos a} + \frac{\sin b}{\cos b}}{1 - \frac{\sin a \sin b}{\cos a \cos b}}$
 
 # $\frac{5 - \frac{1}{x}}{4}$
@@ -240,142 +273,144 @@
 # $\bullet$ 62### phase shifts: $f_k(\theta)$ = $ \frac{\sqrt{4 \pi}} {\mathbf k} \sum_{\ell = 0}^\infty {\sqrt{2 \ell + 1}} \mathbf Y_{\ell 0}( \theta) e^{i \delta_\ell} \sin \delta_\ell$, $ \sigma$ = $ \frac{4 \pi}{\mathbf k^2} \sum_{\ell = 0}^\infty(2 \ell + 1) \sin^2 \delta_\ell$.  
 # $ \Psi(\mathbf r) |_\ell$ = $[\mathbf A_\ell \mathbf j_\ell \mathbf(kr) + \mathbf B_\ell \mathbf n_\ell \mathbf(kr)]$ $\mathbf Y_{\ell 0}(\theta)$, $ \mathbf r$ > $\mathbf a$, $ \tan \delta_\ell$ $\equiv$  - $\frac{\mathbf B_\ell}{\mathbf A_\ell}$.                                                                                                                         
 
+# All analysis in the real world(Mathematical world), begins with the graph of a function. It's accepted that the angular momentum of a closed system is conserved(hence production of particles by conversion of gravitational energy into matter energy, allowing a variety of continuous emerging  universes, conditioned by Biological factors). The origin of the universe(a Physical picture of a polarizable space, and characterized as young by $\frac{\epsilon} {\epsilon_0}$ ~1, with an energy density when expressed in Newtonian units), is not a reproducible event, and cannot be duplicated in the laboratory. There's little reason to believe that macroscopic phenomena are valid at small distances. In trying to eliminate the Riemann curvature tensor, there's also the Ricci curvature tensor, assuming the photon travels without a shift in energy or frequency(red shift, although all matter is at rest). Formidable problems facing String Theory (it has no predictive power, it's a highly sophisticated theoretical laboratory, rather than experimental)is that, it's defined at the Planck energy($10^{19}$ GeV), as any Physical theory that you can possibly come up with), and, it cannot be tested with the present technology, it's tightly constrained as much as the graviton naturally emerges as a massless state with spin-2. The space-time of 10-dimensions at the instant of the Big Bang is beyond  being verified experimentally, of the millions of vacua states, only one is needed to be isolated, and the  Cosmological constant is very close to 0. However, in this theory, when there's spontaneous symmetry breaking, one does not know how to keep the Cosmological constant 0. Until a solution is found to isolate the one vacuum, String Theory is for testing the limits of QFT.
+# <a id='plot'></a>
 # Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!  
 # <a id='plot'></a>  
 # Noteable parsing practices: Certain nested fractions, and bottom underlining braces, not supported. Only on industrial software. The letters in bold are vectors! Notebook is parsing on jupyter notebook/lab,  and ipynb viewer(Android).  
 # <a id='plot'></a>  
-# These are notes/references, 1% functional code! QM(Quantum Mechanics), MP(Mathematical Physics), PHY(Physics), M(Mathematics), and PROG(Programming).  
+# These are notes/references, 1% functional code! These letters are symbols:QM(Quantum Mechanics), MP(Mathematical Physics), PHY(Physics), M(Mathematics), and PROG(Programming).  
 # <a id='plot'></a>  
 # 
 
-# In[ ]:
+# Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsensical answers, and bogus non-differentiable functions. This is the task for the human mind, to see this truth, and preserve it.
 
-
-Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsensical answers, and bogus non-differentiable functions. This is the task for the human mind, to see this truth, and preserve it.
-<a id='plot'></a> 
-
-                             ##REFERENCES:
-1. **Mastering Quantum Mechanics_Essentials, Theory, and Applications - Barton Zweibach_QM**
-2. **Quantum Mechanics - Leonard I. Schiff_QM**
-3. **Field Theory, Quantum Gravity and Strings(I and II) - H.J. de Vega and N. Sanchez_QM**
-4. **Atomic Structure and Spectral Lines - Arnold Sommerfeld_QM**
-5. **Wave Mechanics - Arnold Sommerfeld_QM**
-6. **Quantum Field Theory(Lectures of Sidney Coleman)_QM**
-7. **Notes from Sidney Colemans Physics 253a_QM**
-8. **Nature of Space and Time - Stephen Hawking and Roger Penrose_MP**
-9. **Quantum Mechanics - David Tong_QM**
-10. **Quantum Information and Computation - John Preskill_QM,PROG & M**
-11. **Superstring Theory - Micheal B. Green, John H. Schwarz, Edward Witten_QM**
-12. **Thomas Calculus - George B. Thomas_M**
-13. **Lectures on Quantum Mechanics - Steven Weinberg_QM**
-14. **Mathematical Foundations of Quantum Mechanics - John Von Neumann_QM & M**
-15. **A course on Modern Analysis(5th Edition) - E.T.Whittaker and G.N.Watson_M**
-16. **Quantum Computer Science - N.David Mermer_QM, M, PROG**
-17. **The Python 3 Standard Library by Example - Doug Hellmann_PROG**
-18. **The Annotated Turing - Charles Petzold_PROG**
-19. **Lectures on Quantum Theory - Frederic Schuller_QM**
-20. **Essential Calculus Skills practice Workbook with full solutions - Chris McMullen_M**
-21. **Speakable and Unspeakable in Quantum Mechanics - J.S.Bell_QM**
-22. **Introduction to Tensor Analysis and the Calculus of Moving Surfaces - Pavel Grinfeld_QM & M**
-23. **Quantum Mechanics(vol I and II) - Albert Messiah_QM**
-24. **Lecture notes for Linear Algebra - Terrence Tao_M**
-25. **Black Holes - Brian Cox and Jeff Forshaw_QM**
-26. **Introduction to algorithms - Thomas H. Cormen, Charles E. Leiserson, Ronal L. Rivest and Clifford Stein_M**
-27. **Algebraic Number Theory, A Computational Approach - William Stein_M**
-28. **Feynman lectures on physics(volume I,II and III)_PHY**
-29. **A Guide to Feynman Diagrams in the Many-Body Problem - Richard Mattuck_QM**
-30. **Handbook of Physics - B.M.Yavorsky_PHY**
-31. **Introduction to the theory of quantised fields - N.N. Bogoliubov_QM**
-32. **Fundamentals of Physics - David Halliday, Robert Resnick and Jearl Walker_PHY**
-33. **Ohanian Physics(vol I and II)_second edition - Hans C. Ohanian_PHY**
-34. **Applied Partial Differential Equations, with Fourier series and Boundary Value Problems - Richard Haberman_M**
-35. **Introduction to Calculus and Analysis(Volume I and II) - Richard Courant_M**
-36. **S-Matrix Theory of Strong Interactions - Geoffrey F. Chew_QM**
-37. **Engineering Physics - Shatendra Sharma and Jyotsna Sharma_PHY**
-38. **Introduction to Linear Algebra(Fifth edition) - Gilbert Strang_M**
-39. **Calculus(Volume I, II and III) - Edwin Herman and Gilbert Strang_M**
-40. **Advanced Quantum Mechanics - Freeman Dyson_QM**
-41. **The Mathematical Principles of Natural Philosophy(translated by Motte) - Isaac Newton_M**
-42. **Lost in Math - Sabine Hossenfelder_PHY**
-43. **Differential and integral calculus(Volume I and II) - N. Piskunov_M**
-44. **Mathematical Methods in the Physical Sciences - Mary L. Boas_M**
-45. **Relativistic quantum mechanics and relativistic quantum fields - James D. Bjorken and Sidney D. Drell_QM**
-46. **A course of modern analysis - E.T.Whittaker and G.N.Watson_M**
-47. **CRC Standard Mathematical Tables and Formulae - Daniel Zwillinger_M**
-48. **Introductory Mathematics for Engineers - A.D.Myskis_M**
-49. **Methods of modern physics(volume I II III IV - Michael Reed and Barry Simon_PHY**
-50. **Principles of Quantum Mechanics(2nd Edition) - R. Shankar_QM**
-60. **Singularity theory and gravitation lensing - Arlie O. Peters, Harold Levine and Joachim Wambsganss_QM**
-61. **Orthogonal Functions(translated by Ainsley H. Diamond_M**
-62. **Algorithms and Discreet Applied Mathematics - Amitaba Bagchi and Rahul Muthu_PROG & M**
-63. **Gravitational N-Body Simulatioms_Tools and Algorithms - Sverre J. Aarseth_QM**
-64. **Mathematical computation with SageMath - Paul Zimmermann_PROG & M**
-65. **Classical and Quantum Computation - A.Yu Kitaev_PROG & M**
-66. **Discrete Mathematics and its Application(8th Edition) - Kenneth H. Rosen_M**
-67. **Masters of Theory - Andrew Warwick_M**
-68. **Graduate texts in Mathematics - Serge Lang_M**
-79. **The Mathematical Theory of Blackholes - S. Chandrasekhar_M & PHY**
-70. **Modern Quantum Mechanics - J.J.Sakurai_QM**
-71. **History of functional analysis - Jean Dieudonne_M**
-72. **Planck 201 results V. CMB Power Spectra and likelihoods_QM**
-73. **Einsteins' gravity in a nutshell - A. Zee_QM**
-74. **Aspects of Symmetry - Sidney Coleman_QM**
-75. **Quantum Gravity Partition Functions In Three Dimensions - Alexander Maloney and Edward Witten_QM**
-76. **Essential Calculus-based Physics study guide workbook - Chris McMullen_M**
-77. **A Course in computational algebraic number theory - Cohen H._M**
-78. **Theories of Gravity - Robert M. Wald and Andreas Zoupas_QM**
-78. **A first course in String Theory - Barton Zweibach_QM**
-79. **Relativity_The Special and General Theory - Albert Einstein_QM**
-80. **Fundamentals of Physics - R. Shankar_PHY**
-81. **Calculus(10th Edition) - Anton Bivens Davis_M**
-82. **Differential Equations for Engineers - Jeffrey R. Chasnov_M**
-83. **A First Course in Linear Algebra - Robert A. Beezer_M**
-84. **Can Quantum-Mechanical Description of Physical Reality be considered Complete? - A.Einstein, B.Podolsky and N.Rosen_QM**
-85. **An introductory course on Sage - Sasskia Roos and Michael Jung_PROG & M**
-86. **NIST Handbook 0f Mathematical Functions - Olver, Lozier, Bisvert and Clark_M**
-87. **Physics_For Scientists and Engineers(second Edition)_A Strategic Approach - Randall D. Knight_PHY**
-88. **The Calculus Lifesaver - Adrian Banner_M**
-89. **Algorithmic Thinking(2nd Edition) - Daniel Zingaro_PROG**
-90. **Algorithms for programmers_ideas and source code - Jorg Arndt_PROG & M**
-91. **Principles of digital communication and coding - Andrew Viterbi and Jim K. Omura_PROG**
-92. **Quantum Mechanics(Volume I and II) - Claude Cohen-Tannoudji, Bernard Diu and Franck Laloe_QM**
-93. **Machine vision_Lecture notes - Berthold Horn, Ryan Sander  and Tadayuki Yoshitake_M**
-94. **Introduction to Quantum Mechanics - David J. Griffiths and Darrell F. Schroeter_QM**
-95. **Hyperbolic Differential Equations - Jean Leray_M**
-96. **Theory of Orbits_The restricted problem of three bodies - Victor Szebehely_QM**
-97. **Quantum Theory, Groups and Representations_An introduction - Peter Woit_QM & M**
-98. **Numbers and Functions - R.P.Burn_M**
-99. **Python Library Reference_Release 2.1.1 - Guido  van Rossum, Fred L. Drake Jr_PROG**
-100. **The Algorithm Design Manual - Steven S. Skiena_PROG**
-101. **A Discipline of Programming - Edsger W. Dijkstra_PROG**
-102. **The Art of Computer Programming - Donald E. Knuth_PROG**
-103. **Differential Topology - John Willard Milnor_M** 
-104. **The principle of relativity - H.A.Lorentz, A.Einstein, H. Minkowskiski, and H.Weyl_MP**
-105. **General Theory of Relativity - P.A.M Dirac_QM**
-106. **Mastering matplotlib - Duncan M. Mcgeggor_PROG**
-107. **Stastical Rethinking - Richard McElreath_M & PROG**
-108. **Neural Networks and Learning Machines - Simon Haykin_M & PROG**
-109. **100 instructive-based Physics Examples_Volumes I,II, and III - Chris McMullen_MP**
-110. **Introduction to Analytic Number Theory - Tom Apostol_M**
-111. **Modular functions and Dirichlet Series in Number Theory - Tom M. Apostol_M**
-112. **The theory of relativity - Roger Penrose, Robert Geroch, and David C. Cassidy_QM**
-113. **Lecture notes on the General Theory of Relativity_From Newtons' Attractive Gravity to the Repulsive Gravity of Vacuum Energy - Oyvid Gron_QM**
-114. **Gravitation - Charles W. Misner, Kip S. Thorne, John Archibald Wheeler, and John W_QM** 
-115. **String Theory_Volumes I and II - Joseph Polchinski_MP**
-116. **The Geometry of Physics_An Introduction_3rd Edition - Theodore Frankel_MP**
-117. **Reviews in Number Theory - William J. LeVeque_M**
-118. **History of Theory of Numbers - L.E. Dickson_M**
-119. **Handbook of Quantum Gravity - Cosimo Bambi, Leonardo Modesto, and llya Shapiro_MP**
-120. **Algebraic Theory of Numbers - Hermann Weyl_M**
-121. **Physics - John D. Cutnell and Kenneth W. Johnson_PHY**
-122. **Quantum Field Theory_A Modern Introduction - Michio Kaku_QM**
-123. **Mach's Principle_From Newtons Bucket to Quantum Gravity - Julian Barbour and Herbert Pfister_QM**
-124. **The Princeton Companion to Mathematics - Timothy Gowers_M**
-125. **Categories for the Working Mathematician - Saunders Mac Lane_M**
-126. **Topology - Point-Set and Geometric - Paul L. Shick_M**
-127. **Introduction to Electrodynamics - David J. Giffiths_QM**
-128. **Quantum Field Theory - Mark Srednicki_QM**
-
+# 
+#                              ##REFERENCES:
+# 1. **Mastering Quantum Mechanics_Essentials, Theory, and Applications - Barton Zweibach_QM**
+# 2. **Quantum Mechanics - Leonard I. Schiff_QM**
+# 3. **Field Theory, Quantum Gravity and Strings(I and II) - H.J. de Vega and N. Sanchez_QM**
+# 4. **Atomic Structure and Spectral Lines - Arnold Sommerfeld_QM**
+# 5. **Wave Mechanics - Arnold Sommerfeld_QM**
+# 6. **Quantum Field Theory(Lectures of Sidney Coleman)_QM**
+# 7. **Notes from Sidney Colemans Physics 253a_QM**
+# 8. **Nature of Space and Time - Stephen Hawking and Roger Penrose_MP**
+# 9. **Quantum Mechanics - David Tong_QM**
+# 10. **Quantum Information and Computation - John Preskill_QM,PROG & M**
+# 11. **Superstring Theory - Micheal B. Green, John H. Schwarz, Edward Witten_QM**
+# 12. **Thomas Calculus - George B. Thomas_M**
+# 13. **Lectures on Quantum Mechanics - Steven Weinberg_QM**
+# 14. **Mathematical Foundations of Quantum Mechanics - John Von Neumann_QM & M**
+# 15. **A course on Modern Analysis(5th Edition) - E.T.Whittaker and G.N.Watson_M**
+# 16. **Quantum Computer Science - N.David Mermer_QM, M, PROG**
+# 17. **The Python 3 Standard Library by Example - Doug Hellmann_PROG**
+# 18. **The Annotated Turing - Charles Petzold_PROG**
+# 19. **Lectures on Quantum Theory - Frederic Schuller_QM**
+# 20. **Essential Calculus Skills practice Workbook with full solutions - Chris McMullen_M**
+# 21. **Speakable and Unspeakable in Quantum Mechanics - J.S.Bell_QM**
+# 22. **Introduction to Tensor Analysis and the Calculus of Moving Surfaces - Pavel Grinfeld_QM & M**
+# 23. **Quantum Mechanics(vol I and II) - Albert Messiah_QM**
+# 24. **Lecture notes for Linear Algebra - Terrence Tao_M**
+# 25. **Black Holes - Brian Cox and Jeff Forshaw_QM**
+# 26. **Introduction to algorithms - Thomas H. Cormen, Charles E. Leiserson, Ronal L. Rivest and Clifford Stein_M**
+# 27. **Algebraic Number Theory, A Computational Approach - William Stein_M**
+# 28. **Feynman lectures on physics(volume I,II and III)_PHY**
+# 29. **A Guide to Feynman Diagrams in the Many-Body Problem - Richard Mattuck_QM**
+# 30. **Handbook of Physics - B.M.Yavorsky_PHY**
+# 31. **Introduction to the theory of quantised fields - N.N. Bogoliubov_QM**
+# 32. **Fundamentals of Physics - David Halliday, Robert Resnick and Jearl Walker_PHY**
+# 33. **Ohanian Physics(vol I and II)_second edition - Hans C. Ohanian_PHY**
+# 34. **Applied Partial Differential Equations, with Fourier series and Boundary Value Problems - Richard Haberman_M**
+# 35. **Introduction to Calculus and Analysis(Volume I and II) - Richard Courant_M**
+# 36. **S-Matrix Theory of Strong Interactions - Geoffrey F. Chew_QM**
+# 37. **Engineering Physics - Shatendra Sharma and Jyotsna Sharma_PHY**
+# 38. **Introduction to Linear Algebra(Fifth edition) - Gilbert Strang_M**
+# 39. **Calculus(Volume I, II and III) - Edwin Herman and Gilbert Strang_M**
+# 40. **Advanced Quantum Mechanics - Freeman Dyson_QM**
+# 41. **The Mathematical Principles of Natural Philosophy(translated by Motte) - Isaac Newton_M**
+# 42. **Lost in Math - Sabine Hossenfelder_PHY**
+# 43. **Differential and integral calculus(Volume I and II) - N. Piskunov_M**
+# 44. **Mathematical Methods in the Physical Sciences - Mary L. Boas_M**
+# 45. **Relativistic quantum mechanics and relativistic quantum fields - James D. Bjorken and Sidney D. Drell_QM**
+# 46. **A course of modern analysis - E.T.Whittaker and G.N.Watson_M**
+# 47. **CRC Standard Mathematical Tables and Formulae - Daniel Zwillinger_M**
+# 48. **Introductory Mathematics for Engineers - A.D.Myskis_M**
+# 49. **Methods of modern physics(volume I II III IV - Michael Reed and Barry Simon_PHY**
+# 50. **Principles of Quantum Mechanics(2nd Edition) - R. Shankar_QM**
+# 60. **Singularity theory and gravitation lensing - Arlie O. Peters, Harold Levine and Joachim Wambsganss_QM**
+# 61. **Orthogonal Functions(translated by Ainsley H. Diamond_M**
+# 62. **Algorithms and Discreet Applied Mathematics - Amitaba Bagchi and Rahul Muthu_PROG & M**
+# 63. **Gravitational N-Body Simulatioms_Tools and Algorithms - Sverre J. Aarseth_QM**
+# 64. **Mathematical computation with SageMath - Paul Zimmermann_PROG & M**
+# 65. **Classical and Quantum Computation - A.Yu Kitaev_PROG & M**
+# 66. **Discrete Mathematics and its Application(8th Edition) - Kenneth H. Rosen_M**
+# 67. **Masters of Theory - Andrew Warwick_M**
+# 68. **Graduate texts in Mathematics - Serge Lang_M**
+# 79. **The Mathematical Theory of Blackholes - S. Chandrasekhar_M & PHY**
+# 70. **Modern Quantum Mechanics - J.J.Sakurai_QM**
+# 71. **History of functional analysis - Jean Dieudonne_M**
+# 72. **Planck 201 results V. CMB Power Spectra and likelihoods_QM**
+# 73. **Einsteins' gravity in a nutshell - A. Zee_QM**
+# 74. **Aspects of Symmetry - Sidney Coleman_QM**
+# 75. **Quantum Gravity Partition Functions In Three Dimensions - Alexander Maloney and Edward Witten_QM**
+# 76. **Essential Calculus-based Physics study guide workbook - Chris McMullen_M**
+# 77. **A Course in computational algebraic number theory - Cohen H._M**
+# 78. **Theories of Gravity - Robert M. Wald and Andreas Zoupas_QM**
+# 78. **A first course in String Theory - Barton Zweibach_QM**
+# 79. **Relativity_The Special and General Theory - Albert Einstein_QM**
+# 80. **Fundamentals of Physics - R. Shankar_PHY**
+# 81. **Calculus(10th Edition) - Anton Bivens Davis_M**
+# 82. **Differential Equations for Engineers - Jeffrey R. Chasnov_M**
+# 83. **A First Course in Linear Algebra - Robert A. Beezer_M**
+# 84. **Can Quantum-Mechanical Description of Physical Reality be considered Complete? - A.Einstein, B.Podolsky and N.Rosen_QM**
+# 85. **An introductory course on Sage - Sasskia Roos and Michael Jung_PROG & M**
+# 86. **NIST Handbook 0f Mathematical Functions - Olver, Lozier, Bisvert and Clark_M**
+# 87. **Physics_For Scientists and Engineers(second Edition)_A Strategic Approach - Randall D. Knight_PHY**
+# 88. **The Calculus Lifesaver - Adrian Banner_M**
+# 89. **Algorithmic Thinking(2nd Edition) - Daniel Zingaro_PROG**
+# 90. **Algorithms for programmers_ideas and source code - Jorg Arndt_PROG & M**
+# 91. **Principles of digital communication and coding - Andrew Viterbi and Jim K. Omura_PROG**
+# 92. **Quantum Mechanics(Volume I and II) - Claude Cohen-Tannoudji, Bernard Diu and Franck Laloe_QM**
+# 93. **Machine vision_Lecture notes - Berthold Horn, Ryan Sander  and Tadayuki Yoshitake_M**
+# 94. **Introduction to Quantum Mechanics - David J. Griffiths and Darrell F. Schroeter_QM**
+# 95. **Hyperbolic Differential Equations - Jean Leray_M**
+# 96. **Theory of Orbits_The restricted problem of three bodies - Victor Szebehely_QM**
+# 97. **Quantum Theory, Groups and Representations_An introduction - Peter Woit_QM & M**
+# 98. **Numbers and Functions - R.P.Burn_M**
+# 99. **Python Library Reference_Release 2.1.1 - Guido  van Rossum, Fred L. Drake Jr_PROG**
+# 100. **The Algorithm Design Manual - Steven S. Skiena_PROG**
+# 101. **A Discipline of Programming - Edsger W. Dijkstra_PROG**
+# 102. **The Art of Computer Programming - Donald E. Knuth_PROG**
+# 103. **Differential Topology - John Willard Milnor_M** 
+# 104. **The principle of relativity - H.A.Lorentz, A.Einstein, H. Minkowskiski, and H.Weyl_MP**
+# 105. **General Theory of Relativity - P.A.M Dirac_QM**
+# 106. **Mastering matplotlib - Duncan M. Mcgeggor_PROG**
+# 107. **Statiscal Rethinking - Richard McElreath_M & PROG**
+# 108. **Neural Networks and Learning Machines - Simon Haykin_M & PROG**
+# 109. **100 instructive-based Physics Examples_Volumes I,II, and III - Chris McMullen_MP**
+# 110. **Introduction to Analytic Number Theory - Tom Apostol_M**
+# 111. **Modular functions and Dirichlet Series in Number Theory - Tom M. Apostol_M**
+# 112. **The theory of relativity - Roger Penrose, Robert Geroch, and David C. Cassidy_QM**
+# 113. **Lecture notes on the General Theory of Relativity_From Newtons' Attractive Gravity to the Repulsive Gravity of Vacuum Energy - Oyvid Gron_QM**
+# 114. **Gravitation - Charles W. Misner, Kip S. Thorne, John Archibald Wheeler, and John W_QM** 
+# 115. **String Theory_Volumes I and II - Joseph Polchinski_MP**
+# 116. **The Geometry of Physics_An Introduction_3rd Edition - Theodore Frankel_MP**
+# 117. **Reviews in Number Theory - William J. LeVeque_M**
+# 118. **History of Theory of Numbers - L.E. Dickson_M**
+# 119. **Handbook of Quantum Gravity - Cosimo Bambi, Leonardo Modesto, and llya Shapiro_MP**
+# 120. **Algebraic Theory of Numbers - Hermann Weyl_M**
+# 121. **Physics - John D. Cutnell and Kenneth W. Johnson_PHY**
+# 122. **Quantum Field Theory_A Modern Introduction - Michio Kaku_QM**
+# 123. **Mach's Principle_From Newtons Bucket to Quantum Gravity - Julian Barbour and Herbert Pfister_QM**
+# 124. **The Princeton Companion to Mathematics - Timothy Gowers_M**
+# 125. **Categories for the Working Mathematician - Saunders Mac Lane_M**
+# 126. **Introduction to Nuclear Physics - William N. Cottingham_MP**
+# 127. **Classical Electrodynamics - John David Jackson_MP**
+# 128. **Relativity, Thermodynamics, and Cosmology - Richard C. Tolman_MP**
+# 129. **Topology - Point-Set and Geometric - Paul L. Shick_M**
+# 130. **Theory of combinations of observations least subject to error(Translated by G.W.Stewart) - Carl Friedrich Gauss_M**
+# 131. **Elliptic Operators and Lie Groups - D. W. Robinson_M**
+# 132. **Galois Theory - David A. Cox_M**
 
 # $L^\angle$
 
