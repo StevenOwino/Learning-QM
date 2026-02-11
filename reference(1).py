@@ -9,9 +9,49 @@
 
 # If (a) $\neq$ 0, there is no rational number($\mathbb Q$), where (b) $\times$ 0 = (a), can be fulfilled.
 
+# **Required reading:** Spectral Theorem, Linear Algebra, Continuos Functional Calculus, Measure Theory,
+# 
+
 # **Math**
 
-# $\bullet$
+# **Common nomenclecture**  
+# $\nabla$ - nabla Differential operator in ordinary 3D space  
+# $\nabla$h - Gradient of scalar h  
+# $\nabla$ $\cdot$ $\mathbf A$ - Divergence of a vector  
+# $\nabla$ $\times$ $\mathbf A$ - Curl of a vector  
+# $\nabla^2$ - Laplacian operator in ordinary 3D space  gspacetime  
+# $g_{i,j}, g^{i,j}$ - Covariant, contraviant metric tensor of 3D space, or its components  
+# $g_{\mu \nu}, g^{\mu \nu}$ - Covariant, contravariant metric tensor of 4D spacetime, or its components  
+# $\epsilon_0$ - Permittivity of free space  
+# $\mu_0$ - Permeability of free space  
+# $\rho, \phi$, z - Cylindrical corodinates in 3D space  
+# $\sigma$ - Spacetime interval in 4D  
+# $\phi$ - Electromagnetic scalar potential  
+# $\omega$ - Angular frequency  
+# 
+# **Familiar, recognized and understood equations:**  
+# $\frac{d \sigma} {d \Omega}$ = $|f(\theta, \phi)|^2$  
+# $a^\dagger |n \rangle$ = $\sqrt{n + 1} |n +1 \rangle$  
+# $j_\pm |j,m \rangle$ = $\sqrt{j(j + 1) - m(m \pm 1)} |j, m \pm 1 \rangle$  
+# A(t) = $e^{+ \frac{iHt}{h}} \mathbf {A}e^{- \frac{iHt}{h}}$  
+# $\mathbf H$ = $p \hat q - \mathbf L$  
+# ct' = $ \gamma(ct - \beta x)$  
+# E = $ ( \mathbf {p^2} c^2 + m^2 c^2)^ \frac{1}{2}$  
+# $ \mathbf E$ = -$ \frac{\mathbf {\dot A}}{c} - \nabla \varphi$  
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
 
 # ![the%20folium%20of%20Descartes.png](attachment:the%20folium%20of%20Descartes.png)
 
@@ -242,9 +282,9 @@
 # $\bullet$ 62### phase shifts: $f_k(\theta)$ = $ \frac{\sqrt{4 \pi}} {\mathbf k} \sum_{\ell = 0}^\infty {\sqrt{2 \ell + 1}} \mathbf Y_{\ell 0}( \theta) e^{i \delta_\ell} \sin \delta_\ell$, $ \sigma$ = $ \frac{4 \pi}{\mathbf k^2} \sum_{\ell = 0}^\infty(2 \ell + 1) \sin^2 \delta_\ell$.  
 # $ \Psi(\mathbf r) |_\ell$ = $[\mathbf A_\ell \mathbf j_\ell \mathbf(kr) + \mathbf B_\ell \mathbf n_\ell \mathbf(kr)]$ $\mathbf Y_{\ell 0}(\theta)$, $ \mathbf r$ > $\mathbf a$, $ \tan \delta_\ell$ $\equiv$  - $\frac{\mathbf B_\ell}{\mathbf A_\ell}$.                                                                                                                         
 
-# It's accepted that the angular momentum of a closed system is conserved(hence production of particles by conversion of gravitational energy into matter energy, allowing a variety of continuous emerging  universes, conditioned by Biological factors). The origin of the universe(a Physical picture of a polarizable space, and characterized as young by $\frac{\epsilon} {\epsilon_0}$ ~1, with an energy density when expressed in Newtonian units), is not a reproducible event, and cannot be duplicated in the laboratory. There's little reason to believe that macroscopic phenomena are valid at small distances. In trying to eliminate the Riemann curvature tensor, there's also the Ricci curvature tensor, assuming the photon travels without a shift in energy or frequency(red shift, although all matter is at rest). Formidable problems facing String Theory (it has no predictive power, it's a highly sophisticated theoretical laboratory, rather than experimental)is that, it's defined at the Planck energy($10^{19}$ GeV), as any Physical theory that you can possibly come up with), and, it cannot be tested with the present technology, it's tightly constrained as much as the graviton naturally emerges as a massless state with spin-2. The space-time of 10-dimensions at the instant of the Big Bang is beyond  being verified experimentally, of the millions of vacua states, only one is needed to be isolated, and the  Cosmological constant is very close to 0. However, in this theory, when there's spontaneous symmetry breaking, one does not know how to keep the Cosmological constant 0. Until a solution is found to isolate the one vacuum, String Theory is for testing the limits of QFT.
+# It's accepted that the angular momentum of a closed system is conserved(hence production of particles by conversion of gravitational energy into matter energy, allowing a variety of continuous emerging  universes, conditioned by Biological factors). The origin of the universe(a Physical picture of a polarizable space, and characterized as young by $\frac{\epsilon} {\epsilon_0}$ ~1, with an energy density when expressed in Newtonian units), is not a reproducible event, and cannot be duplicated in the laboratory. There's little reason to believe that macroscopic phenomena are valid at small distances. In trying to eliminate the Riemann curvature tensor, there's also the Ricci curvature tensor, assuming the photon travels without a shift in energy or frequency(red shift, although all matter is at rest). Formidable problems facing String Theory(it has no predictive power, it's a highly sophisticated theoretical laboratory, rather than experimental) is that, it's defined at the Planck energy($10^{19}$ GeV), as any Physical theory that you can possibly come up with), and, it cannot be tested with the present technology, it's tightly constrained as much as the graviton naturally emerges as a massless state with spin-2. The space-time of 10-dimensions at the instant of the Big Bang is beyond  being verified experimentally, of the millions of vacua states, only one is needed to be isolated, and the  Cosmological constant is very close to 0. However, in this theory, when there's spontaneous symmetry breaking, one does not know how to keep the Cosmological constant 0. Until a solution is found to isolate the one vacuum, String Theory is for testing the limits of QFT.
 # <a id='plot'></a>
-# Professor Zweibach, while dicussing the properties of QM, asked the audience why they were laughing at humans' attempt to quantize gravity, as he also laughed. Life is laughter, while not keeping stuff simpler! No space/time for boredom!  
+# Life is laughter, while not keeping stuff simpler! No space/time for boredom!  
 # <a id='plot'></a>  
 # Noteable parsing practices: Certain nested fractions, and bottom underlining braces, not supported. Only on industrial software. The letters in bold are vectors! Notebook is parsing on jupyter notebook/lab,  and ipynb viewer(Android).  
 # <a id='plot'></a>  
