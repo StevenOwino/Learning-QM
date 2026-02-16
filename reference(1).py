@@ -9,7 +9,7 @@
 
 # If (a) $\neq$ 0, there is no rational number($\mathbb Q$), where (b) $\times$ 0 = (a), can be fulfilled.
 
-# **Required reading:** Spectral Theorem, Linear Algebra, Continuos Functional Calculus, Measure Theory,
+# **Required reading:** Spectral Theorem, Linear Algebra, Continuos Functional Calculus(particularly systems of 2nd order differential equations for vector-valued functions) , Measure Theory,
 # 
 
 # **Math**
@@ -19,7 +19,9 @@
 # $\nabla$h - Gradient of scalar h  
 # $\nabla$ $\cdot$ $\mathbf A$ - Divergence of a vector  
 # $\nabla$ $\times$ $\mathbf A$ - Curl of a vector  
-# $\nabla^2$ - Laplacian operator in ordinary 3D space  gspacetime  
+# $\nabla^2$ - Laplacian operator in ordinary 3D space spacetime  
+# $\Box$ - nabla operator in 3D Minskowski spacetime  
+# $\Box^2$ - d'Alembertian operator in Minskowski 4D spacetime  
 # $g_{i,j}, g^{i,j}$ - Covariant, contraviant metric tensor of 3D space, or its components  
 # $g_{\mu \nu}, g^{\mu \nu}$ - Covariant, contravariant metric tensor of 4D spacetime, or its components  
 # $\epsilon_0$ - Permittivity of free space  
@@ -293,7 +295,15 @@
 # 
 
 # Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsensical answers, and bogus non-differentiable functions. This is the task for the human mind, to see this truth, and preserve it.
-# ~
+# 
+
+# **Sample practice and other useful equations:**
+
+# $\bullet$  d'Alembert's Principle -  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$.
+
+# $\bullet$  n^th Taylor Polynomial about x = x_0 for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
+# 
+# 
 
 # $L^\angle$
 
