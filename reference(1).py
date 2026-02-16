@@ -301,7 +301,7 @@
 
 # $\bullet$  d'Alembert's Principle -  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$.
 
-# $\bullet$  n^th Taylor Polynomial about x = x_0 for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
+# $\bullet$  $n^{th}$ Taylor Polynomial about x = x_0 for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
 # 
 # 
 
