@@ -7,6 +7,23 @@ If (a) $\neq$ 0, there is no rational number($\mathbb Q$), where (b) $\times$ 0 
 **Required reading:** Spectral Theorem, Linear Algebra, Continuos Functional Calculus(particularly systems of 2nd order differential equations for vector-valued functions) , Measure Theory,
 
 
+## Introduction
+There is NO electronic ink for philosophical arguments! i.e. local realism does not exist, 
+how long will $\mathbb Z$ remain a bachelor, cold fusion, climate change.... 
+Ultra-cold atoms(lock-stepped with the same spin), 
+have been realized in the laboratory(Bose-Einstein condensate[BEC]), 
+observing the center of mass system(a trick) of  wave-like 
+properties of atoms, so that the Pauli exclusion principle is NOT violated. 
+This technology, although limited(interaction with the external enviroment depolarizes particles) has applications
+in quantum computers(cryptography - quantum key distribution), 
+and is realized only for very low temperature Kelvin scales, not for classical computers. 
+Even the speed of light (c) - has been stopped!, using slow light pulses. 
+The wave-particle duality was proved by an experiment in 1974 by 
+John Clauser( the wave-function collapse is an objective real process - not a physical process, 
+and not relativistic invariant).
+
+
+
 **Math**
 
 **Common nomenclecture**  
@@ -58,7 +75,10 @@ $\frac{5 - \frac{1}{x}}{4}$
 
 $\hbar$
 
-$\bigstar$ **Author: Anonymous**
+
+```python
+
+```
 
 # Mathematical Physics
 
@@ -279,9 +299,10 @@ $\bullet$ 61### Rayleigh: $e^{ikz}$ = ${\sqrt 4 \pi} \sum_{\ell = 0}^\infty {\sq
 $\bullet$ 62### phase shifts: $f_k(\theta)$ = $ \frac{\sqrt{4 \pi}} {\mathbf k} \sum_{\ell = 0}^\infty {\sqrt{2 \ell + 1}} \mathbf Y_{\ell 0}( \theta) e^{i \delta_\ell} \sin \delta_\ell$, $ \sigma$ = $ \frac{4 \pi}{\mathbf k^2} \sum_{\ell = 0}^\infty(2 \ell + 1) \sin^2 \delta_\ell$.  
 $ \Psi(\mathbf r) |_\ell$ = $[\mathbf A_\ell \mathbf j_\ell \mathbf(kr) + \mathbf B_\ell \mathbf n_\ell \mathbf(kr)]$ $\mathbf Y_{\ell 0}(\theta)$, $ \mathbf r$ > $\mathbf a$, $ \tan \delta_\ell$ $\equiv$  - $\frac{\mathbf B_\ell}{\mathbf A_\ell}$.                                                                                                                         
 
-It's accepted that the angular momentum of a closed system is conserved(hence production of particles by conversion of gravitational energy into matter energy, allowing a variety of continuous emerging  universes, conditioned by Biological factors). The origin of the universe(a Physical picture of a polarizable space, and characterized as young by $\frac{\epsilon} {\epsilon_0}$ ~1, with an energy density when expressed in Newtonian units), is not a reproducible event, and cannot be duplicated in the laboratory. There's little reason to believe that macroscopic phenomena are valid at small distances. In trying to eliminate the Riemann curvature tensor, there's also the Ricci curvature tensor, assuming the photon travels without a shift in energy or frequency(red shift, although all matter is at rest). Formidable problems facing String Theory(it has no predictive power, it's a highly sophisticated theoretical laboratory, rather than experimental) is that, it's defined at the Planck energy($10^{19}$ GeV), as any Physical theory that you can possibly come up with), and, it cannot be tested with the present technology, it's tightly constrained as much as the graviton naturally emerges as a massless state with spin-2. The space-time of 10-dimensions at the instant of the Big Bang is beyond  being verified experimentally, of the millions of vacua states, only one is needed to be isolated, and the  Cosmological constant is very close to 0. However, in this theory, when there's spontaneous symmetry breaking, one does not know how to keep the Cosmological constant 0. Until a solution is found to isolate the one vacuum, String Theory is for testing the limits of QFT.
+It's accepted that the angular momentum of a closed system is conserved(hence production of particles by conversion of gravitational energy into matter energy, conditioned by Biological factors). The origin of the universe(a Physical picture of a polarizable space, and characterized as young by $\frac{\epsilon} {\epsilon_0}$ ~1, with an energy density when expressed in Newtonian units), is not a reproducible event, and cannot be duplicated in the laboratory. There's little reason to believe that macroscopic phenomena are valid at small distances. In trying to eliminate the Riemann curvature tensor, there's also the Ricci curvature tensor, assuming the photon travels without a shift in energy or frequency(red shift, although all matter is at rest). There are formidable problems facing String Theory: it has no predictive power, it's a highly sophisticated theoretical laboratory,(rather than experimental), it's defined at the Planck energy($10^{19}$ GeV), as any Physical theory that you can possibly come up with), it cannot be tested with the present technology, and it's tightly constrained as much as the graviton naturally emerges as a massless state with spin-2.
+Space-time is beyond  being verified experimentally, of the vacua states, only one is needed to be isolated, and the  Cosmological constant is very close to 0. However, in this theory, when there's spontaneous symmetry breaking, one does not know how to keep the Cosmological constant 0. Until a solution is found to isolate the one vacuum, String Theory is for testing the limits of QFT.
 <a id='plot'></a>
-Life is laughter, while not keeping stuff simpler! No space/time for boredom!  
+Life is laughter, while not keeping stuff simpler! No space/time for boredom! Have fun, and ask a Physics lab fundamental questions.  
 <a id='plot'></a>  
 Noteable parsing practices: Certain nested fractions, and bottom underlining braces, not supported. Only on industrial software. The letters in bold are vectors! Notebook is parsing on jupyter notebook/lab,  and ipynb viewer(Android).  
 <a id='plot'></a>  
@@ -296,7 +317,7 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 
 $\bullet$  d'Alembert's Principle -  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$.
 
-$\bullet$  $n^{th}$ Taylor Polynomial about x = x_0 for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
+$\bullet$  $n^{th}$ Taylor Polynomial about x = $x_0$ for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
 
 
 
