@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 2/0
@@ -14,7 +14,8 @@
 
 # ## Introduction
 # There is NO electronic ink for philosophical arguments! i.e. local realism does not exist, 
-# how long will $\mathbb Z$ remain a bachelor, cold fusion, climate change.... 
+# how long will $\mathbb Z$ remain a bachelor, cold fusion, climate change, the derivative of a $\delta$ function, 
+# negative eigenvalues, singularities, why wave-functions overlap.... 
 # Ultra-cold atoms(lock-stepped with the same spin), 
 # have been realized in the laboratory(Bose-Einstein condensate[BEC]), 
 # observing the center of mass system(a trick) of  wave-like 
@@ -44,12 +45,15 @@
 # $\epsilon_0$ - Permittivity of free space  
 # $\mu_0$ - Permeability of free space  
 # $\rho, \phi$, z - Cylindrical corodinates in 3D space  
-# $\sigma$ - Spacetime interval in 4D  
+# $\sigma$ - Spacetime interval in 4D  thbb R(\ma)thbf a
 # $\phi$ - Electromagnetic scalar potential  
 # $\omega$ - Angular frequency  
 # 
 # **Familiar, recognized and understood equations:**  
+# If $ \frac{d \alpha} {dt} $ = 0 $\forall$ t, then $\alpha$ is constant  
+# $(f,\phi,) = \lim_{\alpha \to 0} (f, \phi_n) = 0 $  
 # $\frac{d \sigma} {d \Omega}$ = $|f(\theta, \phi)|^2$  
+# $ e^{i \mathbf a \cdot \mathbf X} e^{1 \mathbf b \cdot \mathbf P} \phi_0$ is also a minimum uncertainty state  
 # $a^\dagger |n \rangle$ = $\sqrt{n + 1} |n +1 \rangle$  
 # $j_\pm |j,m \rangle$ = $\sqrt{j(j + 1) - m(m \pm 1)} |j, m \pm 1 \rangle$  
 # A(t) = $e^{+ \frac{iHt}{h}} \mathbf {A}e^{- \frac{iHt}{h}}$  
@@ -57,6 +61,14 @@
 # ct' = $ \gamma(ct - \beta x)$  
 # E = $ ( \mathbf {p^2} c^2 + m^2 c^2)^ \frac{1}{2}$  
 # $ \mathbf E$ = -$ \frac{\mathbf {\dot A}}{c} - \nabla \varphi$  
+# $ \forall F \in H L^2(\mathbb C,\mu_\hbar)$, we have  
+# $ \Vert T_\mathbf a F \Vert^2 L^2(\mathbb C^n,\mu_\hbar)$ = $(\pi \hbar)^{-n}$ $\int \mathbb C_n$ $e^{- \hbar \vert \mathbf a \vert^2}$ $ \mathbf e^{-2 \mathbb R (  \bar {\mathbf a} \cdot \mathbf a ) }$ $ \vert \mathbf F (\mathbf z + \hbar \mathbf a ) \vert^2 $ $ \mathbf e^{- \vert \mathbf x \vert^2 / \hbar} $ dx  
+#                                                           = $(\pi \hbar)^{-n}$ $\int \mathbb C_n$ $e^{- \mathbf z + \hbar \vert^2 / \hbar}$ $\vert \mathbf F(\mathbf z + \hbar \mathbf a) \vert^2$ dz  
+#                                                           = $ \Vert \mathbf F \Vert^2$ $L^2$ $ ( \mathbb C^n,\mu \hbar ) $  
+#         
+# 
+# 
+# 
 # 
 # 
 # 
@@ -72,7 +84,11 @@
 # 
 # 
 
-# ![the%20folium%20of%20Descartes.png](attachment:the%20folium%20of%20Descartes.png)
+# In[ ]:
+
+
+get_ipython().system('[the%20folium%20of%20Descartes.png](attachment:the%20folium%20of%20Descartes.png)')
+
 
 # $\frac{\frac{\sin a}{\cos a} + \frac{\sin b}{\cos b}}{1 - \frac{\sin a \sin b}{\cos a \cos b}}$
 
@@ -111,7 +127,7 @@
 
 # $\bullet$ 6### uncertainty: $\vartriangle{A} \equiv || (\hat{A} - \langle \hat{A} \rangle \mathbb{1}) \psi ||$,  
 # $(\vartriangle{A})^2$ = $\langle \hat{A}^2 \rangle - \langle \hat{A} \rangle^2 \geq$ 0.  
-# $\vartriangle{A} \vartriangle{B}$ $\geq$ | $\langle \psi$ $\mid$ $\frac{1}{2i}$ $[\hat{A},\hat{B}]$ $\mid$ $\psi$ $\rangle$ |,
+# $\vartriangle{A} \vartriangle{B}$ $\geq$ | $\langle \psi$ $\mid$ $\frac{1}{2i}$ $[\hat{A},\hat{B}]$ $\mid$ $\psi$ $\rangle$ | 
 
 # $\bullet$ 7### saturation: $(\hat{B} - \langle \hat{B} \rangle \mathbb1) | \psi \rangle$ = i $\lambda (\hat{A} - \langle \hat{A} \mathbb1) | \psi \rangle$, $\lambda \in \Re$.  
 # $\vartriangle{x} \vartriangle{p} \geq \frac{\hbar}{2}$. For $\psi$ ~ $\exp(- \frac{1}{4} \frac{x^2}{\vartriangle^2})$,  
@@ -321,7 +337,7 @@
 
 # **Sample practice and other useful equations:**
 
-# $\bullet$  d'Alembert's Principle -  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$.
+# $\bullet$  d'Alembert's Principle -  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$
 
 # $\bullet$  $n^{th}$ Taylor Polynomial about x = $x_0$ for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
 # 
