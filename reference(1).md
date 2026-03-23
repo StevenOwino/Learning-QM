@@ -1,3 +1,10 @@
+# Quantum Mechanics core notes
+### Author: Owino Steve
+Date: March 22, 2026
+
+
+
+
 ```python
 2/0
 ```
@@ -7,7 +14,7 @@
 
     ZeroDivisionError                         Traceback (most recent call last)
 
-    Cell In[2], line 1
+    Cell In[1], line 1
     ----> 1 2/0
 
 
@@ -23,6 +30,19 @@ If (a) $\neq$ 0, there is no rational number($\mathbb Q$), where (b) $\times$ 0 
 **Required reading:** Spectrum of the harmonic oscillator, Spectral Theorem, Linear Algebra, 
 Continuos Functional Calculus(particularly systems of 2nd order differential equations for vector-valued functions) , 
 Measure Theory, Equipartition theorem, 
+
+
+# Preface
+
+These are advanced core notes(reference sheet), in Quantum Mechanics(describes how particles behave like waves - the state of a system, and its' probabilities), and some equations of Mathematical Physics.
+The key important formulas are the Schr$\ddot{o}$dinger equation, 
+Uncertainty Principal, energy levels of the hydrgen atom, harmonic oscillator energy,
+and the Hamiltonian energy(describes how a system evolves in time). 
+Included, are physical quantities like long tensor expressions, Gauge Theory, 
+important systems(the Harmonic Oscillator, the energy levels of the Hydrogen atom), Mathematical tools, 
+important inequalities, and some advanced notes on Quantum Field Theory.
+Don't try to read it linearly, instead, come back here as a formula reference.  
+                                                                     
 
 
 ## Introduction
@@ -57,14 +77,14 @@ $\mathscr L^2(\mathbb R^3) \hat \otimes V_{\ell}$, where $V_{\ell}$ is an irredu
 of dimension 2$\ell$ + 1  
 Boson - A particle with an integer spin  
 Fermion - A particle with half-integer spin  
-For j,k,l $\in$ {1,2,3} we define $\epsilon_{j,k,l}$ by the formula:  
+For j,k,l $\in {1,2,3}$ we define $\epsilon_{j,k,l}$ by the formula:  
 $\epsilon_{j,k,l}$ = $\left\{ 
 \begin{array}{ll}
    1 \text{ if (j,k,l) is an even permutation of (1,2,3)} \\ 
   -1 \text{ if {j,k,l} is  an odd permutation of (1,2,3)} \\
    0 \text{ if any two of {j,k,l} are equal} \\
 \end{array}
-\right. $ e.g $\epsilon_{3,2,1}$ = -1 and $\epsilon _{2,1,2}$ = 0.  
+\right.$ e.g $\epsilon_{3,2,1}$ = -1 and $\epsilon _{2,1,2}$ = 0.  
 The commutation relations for the basis ${F_1,F_2,F_3}$ for so(3)  
 may be writtenu(using the summation convention!) as
 $[F_j,F_k]$ = $\epsilon_{j,k,l}F_l$ i.e. if we take j=1 and k=2, then the sum on $\ell$
@@ -126,7 +146,7 @@ and those that are purely complex(i.e., $P_z \cap \bar P$ = {0} $\forall$ z $\in
 The half-form of the Hilbert space is the completion w.r.t. $\vert s \vert^2$ = $\int_\Xi$ ${\widetilde{(s1,s2)}}$  of the space
 of polarized s for which $\vert s \vert^2$ < $\infty$  
 Pairing maps $\longrightarrow$ $\int_\mathbb R$ $\overline {\int_\mathbb {R} \phi (x) e^{- \frac{{ixp}}{\hbar}} dx}$ $\psi$ (p) dp  
-Dirac $\delta$ function - $\delta_xi$ = $\xi$(0)  
+Dirac $\delta$ function $\longrightarrow$ $\delta_xi$ = $\xi$(0)  
 
 
 
@@ -182,8 +202,8 @@ Gauge transformation $\longrightarrow$ $U_\gamma Q^{1}_{pre}(f)U^{-1}_{\gamma}$ 
 $\psi_n(r,\phi)$ = $f(r) e^{-in\phi}$, where n is an integer, and f is an arbitrary holomorphic function on $\mathbb C$ with
 $\int_0^{\infty}|f(r)|^2$r dr < $\infty$  
 Sympletic potential - $\theta$ = $\frac{1}{2}$(p dx - x dp) = $\frac{1}{{2m} \omega}$(p dy - y dp)  
-Fourier transform - A constant multiple of a unitary map $\longrightarrow$ $\psi(p)$ = -$\int_\mathbb R$ $\phi$(x)$e^{- \frac{{ixp}}{\hbar}}$ dx dp  
- $C_c^{\infty}(\mathbb R^n)$ - Space of smooth, compactly supported functions  
+Fourier transform - A constant multiple of a unitary map $\longrightarrow$ $\psi(p)$ = - $\int_\mathbb R$ $\phi$(x)$e^{- \frac{{ixp}}{\hbar}}$ dx dp  
+ $C_c^{\infty}(\mathbb R^n)$ $\longrightarrow$ Space of smooth, compactly supported functions  
                                               
                     
                                                                          
@@ -245,15 +265,9 @@ plt.show()
 
 
     
-![png](output_8_0.png)
+![png](output_10_0.png)
     
 
-
-$\frac{\frac{\sin a}{\cos a} + \frac{\sin b}{\cos b}}{1 - \frac{\sin a \sin b}{\cos a \cos b}}$
-
-$\frac{5 - \frac{1}{x}}{4}$
-
-$\hbar$
 
 # Physics of the Universe(Manifolds of pairing maps of an invariant self-adjoint subspace)
 
@@ -490,26 +504,313 @@ Abstract Mathematics(models of inductive reasoning), is availed to avoid nonsens
 
 **Sample practice and other useful equations:**
 
-$\bullet$  d'Alembert's Principle -  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$
+$\bullet$  d'Alembert's Principle $\longrightarrow$  $\sum_i \langle \mathbf {F}_i(\mathbf c(t),t) - \mathbf {m}_ic_i(t), \mathbf {v}_i \rangle$ = 0 for all tangent vectors $\mathbf v$ at $\mathscr {M}_\mathbf c(t)$
 
 $\bullet$  $n^{th}$ Taylor Polynomial about x = $x_0$ for f , $p_n(x)$ = $ f(x_0) + f'(x_0)(x - x_0) + \frac{f''(x_0)}{2!}(x - x_0)^2 +...\frac{f^{(n)}{(x_0)}}{n!}(x - x_0)^n $   
 
 
 
-$\bullet$ Airy equation - $ \frac{d^2 \psi} {dU^2}$ - $u \psi (u)$ = 0 
+$\bullet$ Airy equation $\longrightarrow$ $ \frac{d^2 \psi} {dU^2}$ - $u \psi (u)$ = 0 
 
-$\bullet$ Jacobi identity - [X,[Y,Z]] + [Y,[X,Z]] + [Z, [X,Y]] = 0
+$\bullet$ Jacobi identity $\longrightarrow$ [X,[Y,Z]] + [Y,[X,Z]] + [Z, [X,Y]] = 0
 
-$\bullet$ Stokes theorem - $\int_s d \beta$ = $\int_{\partial s} \beta$  
+$\bullet$ Stokes theorem $\longrightarrow$ $\int_s d \beta$ = $\int_{\partial s} \beta$  
 
 
 $\bullet$ - A sympletic manfold (N, $\omega$) is quantzable (for a particular value of $\hbar$) if
 $\frac{1}{{2 \pi \hbar}}$ $\int_s \omega \in \mathbb Z$ for every closed surface S in N   
 
 
-$\bullet$ Probability density function(Gaussian distribution) - f(x) = $\frac{1}{\sigma \sqrt{2 \pi}}$ $e^{- \frac{(x - \mu)^2}{2 \sigma^2}}$  
+$\bullet$ Probability density function(Gaussian distribution) $\longrightarrow$ f(x) = $\frac{1}{\sigma \sqrt{2 \pi}}$ $e^{- \frac{(x - \mu)^2}{2 \sigma^2}}$  
 
                                                                                  
+
+$\bullet$ Bells' Inequality $\longrightarrow$ 4($\epsilon + \delta$) = $\sqrt{2}$ - 1 
+
+$\bullet$ Poisson bracket of f and g $\longrightarrow$ [f,g] = $\frac{\partial f}{\partial q_1}$ $\frac{\partial g}{\partial p_1}$ +...+ $\frac{\partial f}{\partial q_n}$ $\frac{\partial g}{\partial p_n}$ - $\frac{\partial f}{\partial p_1}$ $\frac{\partial g}{\partial q_1}$ - ... - $\frac{\partial f}{\partial p_n}$ $\frac{\partial g}{\partial q_n}$  
+
+
+# Test your comprehension
+
+## Section A
+
+Q1. Schr$\ddot{o}$dinger Equation - describes how a quantum system evolves in time $\longrightarrow$ i$\hbar$ $\frac{\partial \psi(x,t)}{\partial t}$ = $\hat {H} \psi$  
+$\bullet$ $\psi$(x,t): wavefunction (probability amplitude)  
+$\bullet$ $\hbar$: reduced Planck constant  
+$\bullet$ i: imaginary unit  
+$\bullet$ $\hat {H}$: Hamiltonian (total energy operator) 
+
+Q2. Uncertainty Principle $\longrightarrow$ $\vartriangle{x} \vartriangle{p}$ $\geq$ $\frac{\hbar}{2}$  
+$\bullet$ You cannot measure position and momentum precisely at the same time  
+$\bullet$ More precision in one, less precision in the other 
+
+Q3. Definitions  
+(a) Hermitean Operator - ensures real eigenvalues(physical measurements) $\longrightarrow$ $\hat {A} \dagger$ = $\hat {A}$  
+(b)Eigenvalue equation $\longrightarrow$ $\hat{A} \psi$ = a$\psi$  
+$\bullet$ a: eigenvalue  
+$\bullet$ $\psi$: eigenfunction  
+
+
+Q4. Particle in a box energies $\longrightarrow$ $E_n$ = $\frac{n^2 \pi^2 \hbar^2}{{2m}{L^2}}$, n = 1,2,3,..  
+
+Q5. Commutation relation $\longrightarrow$ [ $\hat {x}, \hat {p}$ ] = i$\hbar$  
+Significance:  
+$\bullet$ Leads to uncertainty principle  
+$\bullet$ Shows position and momentum are incompatible observables  
+
+## Section B
+
+Q6. Particle in a box 
+(a) Wavefunction(10 marks)  
+Schr$\ddot{o}$dinger equation:  
+    $\frac{- \hbar^2}{2m}$ $\frac{d^2 \psi}{d {x^2}}$ = E$\psi$  
+General solution:  
+    $\psi$ = $\mathbf {A} sin({k} {x})$ + $\mathbf {B} cos({k}{x})$  
+Boundary conditions:
+$\bullet$ $\psi$(0) = 0 $\implies$ $\mathbf {B}$ = 0  
+$\bullet$ $\psi ( \mathbf {L}$) = 0 $\sin ({k}{\mathbf L})$ = 0  
+So:
+    k = $\frac{{n} \pi}{L}$  
+Final wavefunction:  
+    $\psi_n$(x) = $\sqrt{\frac{2}{L}}$ $\sin$ $\left( \frac{{n} \pi {x}}{L} \right)$  
+(b) Energy Levels(5 marks)  
+$E_n$ = $\frac{n^2 \pi^2 \hbar^2}{2{m}{L}^2}$  
+(c) Probability(0 $\longrightarrow$ $\frac{\mathbf {L}{2}})$ for n = 1 [5 marks]  
+$\mathbf {P}$ = $\int_0^{ \frac{L}{2}}|\psi_1|^2$ dx  
+              = $\frac{2}{L}$ $\int_0^{\frac{L}{2}}$ $\sin^2$ $\left( \frac{\pi {x}}{L} \right)$ dx  
+Result:  
+    $\mathbf {P}$ = $\frac{1}{2}$  
+    
+    
+    
+
+Q7. Harmonic Oscillator
+(a) Hamiltonian(5 marks)  
+$\hat H$ = $\frac{p^2}{2{m}}$ + $\frac{1}{2}$ m $\omega^2$ $x^2$  
+(b) Energy Eigenvalues(5 marks)  
+$E_0$ = $\hbar \omega$ $\left(n + \frac{1}{2} \right)$  
+(d) Zero-Point Energy(5 marks)  
+$\bullet$ Even at lowest energy, system still has energy  
+$\bullet$ Due to uncertainty principle  
+$\bullet$ Particle can never be completely at rest  
+
+
+Q8. Commutator & Uncertainty
+(a) Show:  
+    [$\hat {x}, \hat {p}]$ = i$\hbar$  
+    Apply to function f(x):  
+        $\hat {x} \hat {p}$f = x(-i$\hbar$f')  
+                                 $\hat {p} \hat {x}$f = -i$\hbar$ $\frac{d}{d{x}}$(xf) = -i$\hbar$(f + xf')  
+   Subtract:  
+        [$\hat x, \hat p]$f = i$\hbar$f  
+   Thus:  
+        [$\hat x, \hat p]$ = i$\hbar$  
+(b) Uncertainty Principle  
+    General relation:  
+       $\vartriangle \mathbf A \vartriangle \mathbf B$ $\geq$ $\frac{1}{2}$ |$\langle [ \mathbf A, \mathbf B] \rangle$|  
+    Substitute:  
+       $\vartriangle x \vartriangle p$ $\geq$ $\frac{\hbar}{2}$  
+Q9. Hydrogen Atom(15 marks)                                                                                         
+    (a) Energy Levels(5 marks)  
+    $E_n$ = - $\frac{13.6}{n^2}$ eV  
+    (b)Quantum Numbers(5 marks)                                                                                                 
+    $\bullet$ n: energy level  
+    $\bullet$ $\ell$: orbital shape  
+    $\bullet$ m: orientation  
+    (c) Why Energy is Negative(5 marks)  
+    $\bullet$ Electron is bound to nucleus  
+    $\bullet$ Energy is required to remove electron  
+    $\bullet$ Bound states  
+
+#### Wavefunction collapse
+$\bullet$ Before measurement, we have superposition  
+$\bullet$ Measurement leads to a definite state  
+A collapse = Transition from probability to reality
+
+###### Additional Notes(Advanced)  
+I.  
+(a) Completeness  
+
+A Hilbert space is complete if:  
+    Every Cauchy sequence $\psi_n$ $\subset$ $\mathscr H$ converges to a limit in $\mathscr H$  
+Formally:  
+    $\Vert \psi_n - \psi_m \Vert$ $\longrightarrow$ 0 $\implies$ $\exists \psi$ $\in \mathscr H$, $\psi_n$ $\longrightarrow$ $\psi$  
+
+(b) Extension to Orthonormal basis  
+
+Given orthonormal set $e_1$:  
+$\bullet$ If not complete, there exists $\psi$ $\neq$ 0 orthogonal to all $e_1$  
+$\bullet$ Add $\psi$, normalize enlarge set  
+
+Zorn's Lemma argument:  
+Maximal orthonormal set = orthonormal basis  
+
+(c) Projection is bounded  
+
+Projection operator $\mathbf P$:  
+    $\mathbf P^2$ = $\mathbf P$, $\mathbf {P}\dagger$ = $\mathbf P$  
+    
+For any $\psi$:
+    $\Vert \mathbf P \psi \Vert$ $\leq$ $\Vert \psi \Vert$  
+    Thus:  
+        $\Vert \mathbf P \Vert$ $\leq$ 1. therefore bounded.  
+    
+
+II. Spectral Theorem  
+(a) Statement  
+
+For self-adjointnoperator $\hat A$:  
+    $\hat A$ = $\int \lambda$ dE($\lambda$)  
+$\bullet$ E($\lambda$): projection-valued measure  
+$\bullet$ Generalizes diagonalization  
+
+(b) Spectrum Types  
+$\bullet$ $\mathbf {Dicrete}$ eigenvalues (bound states)  
+$\bullet$ $\mathbf {Continuous}$ scattering states  
+
+(c) Measurement Interpretation  
+
+Probability of outcome in set $\vartriangle$:  
+    $\mathbf {P}(\vartriangle)$ = $\langle \psi$|E($\vartriangle$)|$\psi \rangle$  
+    Measurement outcome = spectrum of operator
+
+III. Operators & Dynamics  
+
+Time Evolution  
+
+(a) Derivation  
+
+Start:  
+    $\langle \mathbf {A} \rangle$ = $\langle \psi$|$\mathbf {\hat A}$|$\psi \rangle$  
+
+Differentiate:  
+    $\frac{d}{dt} \langle \mathbf {A} \rangle$ = $\langle$ $\frac{\partial \psi}{\partial t}$|$\mathbf A$|$\psi \rangle$ + $\langle \psi$|$\mathbf A$|$\frac{\partial \psi}{\partial t} \rangle$ + $\langle \psi$|$\frac{\partial \mathbf A}{\partial t}$|$\psi \rangle$    
+        
+Use Schr$\ddot{o}dinger$ equation:  
+    i$\hbar \frac{\partial \psi}{\partial t}$ = $\mathbf H \psi$  
+    
+Substitute:  
+    $\frac{d \langle \mathbf A \rangle}{dt}$ = $\frac{i}{\hbar}$ $\langle$[$\mathbf {\hat H}$, $\mathbf {\hat A}$] $\rangle$ + $\langle \frac{\partial \mathbf A}{\partial t} \rangle$  
+                              
+    
+ (b) Apply to position  
+
+$\mathbf {\hat H}$ = $\frac{p^2}{2m}$  
+[$\mathbf {\hat  H}$,x] =$\frac{1}{2m}$[$p^2$,x]  
+
+Use:  
+    [$\hat p$,x] = -i$\hbar$  
+    
+Result:
+    $\frac{d \langle x \rangle}{dt}$ = $\frac{\langle p \rangle}{m}$  
+    Velocity operator emerges naturally  
+    
+(c) Conservation condition  
+
+If:  
+    [$\mathbf {\hat H}, \mathbf {\hat A}$] = 0 and $\frac{\partial A}{\partial t}$ = 0  
+    Then:  
+        $\frac{d \langle A \rangle}{dt}$ = 0  
+        A is conserved  
+        
+
+IV. Harmonic Oscillator Algebra  
+
+(a) Commutator  
+$\hat a$ = $\frac{1}{\sqrt{2 \hbar {m} \omega}}$(m $\omega$ x + ip)  
+
+Compute:  
+    [$\hat a, \hat a{\dagger}]$ = 1  
+    
+(b) Hamiltonian  
+
+$\mathbf {\hat H}$ = $\hbar \omega$ ($\hat a{\dagger} \hat a$ + $\frac{1}{2}$)  
+
+(c) Orthonomality  
+
+$\langle n|m \rangle$ = $\delta_{nm}$  
+
+Proof:  
+    $\bullet$ Ladder operators generate states  
+    $\bullet$ Inner product preserved recursively  
+    
+
+
+
+V. Advanced Systems  
+
+Angular Momentum  
+
+(a) Lie Algebra  
+
+[$J_i,J_j$] = i$\hbar \epsilon_{ijk} J_k$  
+Derived from rotational symmetry generators  
+
+(b) Ladder Operators  
+
+$J_\pm$ = $J_x \pm$ i$J_y$  
+[$J_z,J_\pm$] = $\pm \hbar J_\pm$  
+
+(c) Eigenvalues  
+
+$J^2$|${jm} \rangle$ = $\hbar^2j(j + 1)| {jm}$ $\rangle$  
+$J_z| {jm} \rangle$ = $\hbar m|{jm} \rangle$  
+
+
+
+VI. Perturbation Theory  
+
+(a) First Order  
+
+$E_{n}^{(1)}$ = $\langle n^{(0)}$|V|$n^{(0)} \rangle$  
+
+(b) Second Order  
+$E_{n}^{(2)}$ = $\sum_{k \neq n}$$\frac{| \langle {k}|{V}|{n} \rangle |^2}{E_{n}^{(0)} - E_{k}^{(0)}}$  
+    
+(c) Degeneracy  
+$\bullet$ Degenerate states mix  
+$\bullet$ Solve matrix:  
+    $\mathbf V_{ij}$ = $\langle i| \mathbf {V}|j \rangle$  
+    Diagonalize within subspace  
+    
+
+VII. Conceptual  
+
+Decoherence  
+
+$\bullet$ System interacts with environment  
+$\bullet$ Phase information lost  
+$\bullet$ Superposition(classical mixture)  
+Explains classical world emergence
+
+VIII. Path Integral  
+
+Core Idea  
+
+Amplitude = $\sum_{paths}$$e^{\frac{i}{\hbar} S[x(t)]}$  
+
+Action  
+
+S = $\int$L dt  
+
+Classical Limit  
+
+$\bullet$ Does not account for a dominant path/stationary action  
+$\bullet$ Recovers classical mechanics  
+
+Quantum Mechanics becomes Linear Algebra, Operator Theory, and Symmetry, NOT just formulas.  
+
+
+$\frac{\frac{\sin a}{\cos a} + \frac{\sin b}{\cos b}}{1 - \frac{\sin a \sin b}{\cos a \cos b}}$
+
+
+```python
+
+```
+
+$\hbar$
+
+$\frac{5 - \frac{1}{x}}{4}$
 
 $L^\angle$
 
