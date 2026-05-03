@@ -280,79 +280,79 @@ plt.legend()
 plt.show()
 
 
-# # Definitions  
-# Quantum Theory - a generalization/systematic refinement of classical mechanics  
-# Quantum communication/computation $\longrightarrow$ Manipulating qubits with quantum gates; Qubits being transmitted between different parties; Exploring applications based on sending information, rather than processing it.  
-# Quantum Fourier Transform $\longrightarrow$ $\phi$ = $\sum_{k = 0}^{n - 1}$$y_k$|k> = $\frac{1}{\sqrt 2}$ $\sum_{k = 0}^{n - 1}$$e^{ \frac{2 \pi {ijk}}{N}}$|k> = $\frac{1}{\sqrt 2}$$\sum_{k = 0}^{N - 1}$$\omega^{jk}$|k> for N = 2, and k = 0,1. (Note $\omega$ = $e^{\frac{2 \pi}{N}}$)  
-# An entangled pair $\longrightarrow$ Applying one qubit by manipulating the larger set of the four possible states.  
-# Von Neumann entropy $\longrightarrow$ S($\rho$) = - tr($\rho \ln \rho$) = - $\sum_j \lambda_j \ln \lambda_j$(These are diagonalized values); $S(\rho)$ = 0 $\iff$ $\rho^2$ = $\rho$(case of a pure state/projector); 
-# Maximally mixed state $\longrightarrow$ $S(\rho_m)$ = - N $\frac{1}{N} \ln \frac{1}{N}$ = $\ln N$  
-# Gibbs entropy(classical statistical mechanics) $\longrightarrow$ $S_G$ = - $k_B \sum_i {P_i \ln P_i}$, where $k_B$ is the Bolzmann constant, and P is probabilities.  
-# Shannon entropy(classical information theory) $\longrightarrow$ H(X) = $\mathbf E(\log_b P(X))$ = - $\sum_x P(x) \log_b P(x)$, where H is for Shannon, $\mathbf E$ is the expectation/average value, X is a variable, and P is probabilities.  
+# # Definitions
+# Quantum Theory - a generalization/systematic refinement of classical mechanics
+# Quantum communication/computation $\longrightarrow$ Manipulating qubits with quantum gates; Qubits being transmitted between different parties; Exploring applications based on sending information, rather than processing it.
+# Quantum Fourier Transform $\longrightarrow$ $\phi$ = $\sum_{k = 0}^{n - 1}$$y_k$|k> = $\frac{1}{\sqrt 2}$ $\sum_{k = 0}^{n - 1}$$e^{ \frac{2 \pi {ijk}}{N}}$|k> = $\frac{1}{\sqrt 2}$$\sum_{k = 0}^{N - 1}$$\omega^{jk}$|k> for N = 2, and k = 0,1. (Note $\omega$ = $e^{\frac{2 \pi}{N}}$)
+# An entangled pair $\longrightarrow$ Applying one qubit by manipulating the larger set of the four possible states.
+# Von Neumann entropy $\longrightarrow$ S($\rho$) = - tr($\rho \ln \rho$) = - $\sum_j \lambda_j \ln \lambda_j$(These are diagonalized values); $S(\rho)$ = 0 $\iff$ $\rho^2$ = $\rho$(case of a pure state/projector);
+# Maximally mixed state $\longrightarrow$ $S(\rho_m)$ = - N $\frac{1}{N} \ln \frac{1}{N}$ = $\ln N$
+# Gibbs entropy(classical statistical mechanics) $\longrightarrow$ $S_G$ = - $k_B \sum_i {P_i \ln P_i}$, where $k_B$ is the Bolzmann constant, and P is probabilities.
+# Shannon entropy(classical information theory) $\longrightarrow$ H(X) = $\mathbf E(\log_b P(X))$ = - $\sum_x P(x) \log_b P(x)$, where H is for Shannon, $\mathbf E$ is the expectation/average value, X is a variable, and P is probabilities.
 # State reduction $\longrightarrow$ The effective two-level Hamiltonian( $\hat H_{eff}$ = $\begin{pmatrix}0 & \Omega \cr \Omega & \vartriangle - i \frac{\Gamma}{2} \end{pmatrix} )$, dissipating via spontaneous emission, during "measurement", included in the dynamics(A Quantum trajectory is NOT reversible).
-# Note that $[\hat H_{eff}, \hat H^\dagger_{eff}]$ $\neq$ 0, this Hamiltonian also generates a non-unitary dynamics $e^{- i \hbar_{eff}(t)}$ $\neq$ $e^{i \hat H^\dagger_{eff}(t)}$  
-# Measurement of a state(indicates a loss of energy) $\longrightarrow$ $\langle \psi | \psi \rangle$ = $\langle \psi_0 | e^{- i \hat H_{eff}(t)} e^{i \hat H_{eff}(t)} | \psi_0 \rangle$ $\rightarrow$ $e^{- \Gamma(t)}$.  
-# ($\log_b$ can take any of the values 2[classical bits], e[the natural logarithm], and base 10[orders of magnitude]);  
-# $H_{bin}(p)$ = $ -p \log p - (1 - p) \log (1 - p)$ $\rightarrow$ e.g. $H_{bin}\frac{1}{2}$ = $ - \frac{1}{2} \log \frac{1}{2} - \frac{1}{2} \log \frac{1}{2}$ = $\log 2$  
+# Note that $[\hat H_{eff}, \hat H^\dagger_{eff}]$ $\neq$ 0, this Hamiltonian also generates a non-unitary dynamics $e^{- i \hbar_{eff}(t)}$ $\neq$ $e^{i \hat H^\dagger_{eff}(t)}$
+# Measurement of a state(indicates a loss of energy) $\longrightarrow$ $\langle \psi | \psi \rangle$ = $\langle \psi_0 | e^{- i \hat H_{eff}(t)} e^{i \hat H_{eff}(t)} | \psi_0 \rangle$ $\rightarrow$ $e^{- \Gamma(t)}$.
+# ($\log_b$ can take any of the values 2[classical bits], e[the natural logarithm], and base 10[orders of magnitude]);
+# $H_{bin}(p)$ = $ -p \log p - (1 - p) \log (1 - p)$ $\rightarrow$ e.g. $H_{bin}\frac{1}{2}$ = $ - \frac{1}{2} \log \frac{1}{2} - \frac{1}{2} \log \frac{1}{2}$ = $\log 2$
 # Normalization - technical manipulation of Mathematical symbols(to
-# eliminate the physical vacuum contribution and to simplify the one electron contribution) 
-# Vacuum region - discontinuity of fields in the small  
+# eliminate the physical vacuum contribution and to simplify the one electron contribution)
+# Vacuum region - discontinuity of fields in the small
 # Limit - $\forall$ total infinities, the degrees of freedom ceases to increase
-# without limit as shorter and shorter time intervals are considered  
-# Decoherence - The inevitable interaction of a system and its environment(quantum-to-classical transition; It's a fundamental limiting factor in the useful operation of Quantum Computers).                                                                           
+# without limit as shorter and shorter time intervals are considered
+# Decoherence - The inevitable interaction of a system and its environment(quantum-to-classical transition; It's a fundamental limiting factor in the useful operation of Quantum Computers).
 # Spin(total angular momentum/directional quantization) - a particle $\ell$ of non-negative integer or half integer. The Hilbert space for such a particle is
 # $\mathscr L^2(\mathbb R^3) \hat \otimes V_{\ell}$, where $V_{\ell}$ is an irreducible projective representation of SO(3)
-# of dimension 2$\ell$ + 1  
-# Photons - A collection of an indefinite number of indistingishable particles, that obey Bose-Einstein statistics, with integer spin $\mathbb 1$.  
-# Boson(Bose-Einstein statistics) - A particle with an integer spin  
-# Fermion(Fermi-Dirac statistics) - A particle with half-integer spin e.g. an electron  
-# For j,k,l $\in {1,2,3}$ we define $\epsilon_{j,k,l}$ by the formula:  
-# $\epsilon_{j,k,l}$ = $\left\{ 
+# of dimension 2$\ell$ + 1
+# Photons - A collection of an indefinite number of indistingishable particles, that obey Bose-Einstein statistics, with integer spin $\mathbb 1$.
+# Boson(Bose-Einstein statistics) - A particle with an integer spin
+# Fermion(Fermi-Dirac statistics) - A particle with half-integer spin e.g. an electron
+# For j,k,l $\in {1,2,3}$ we define $\epsilon_{j,k,l}$ by the formula:
+# $\epsilon_{j,k,l}$ = $\left\{
 # \begin{array}{ll}
-#    1 \text{ if {j,k,l} is an even permutation of (1,2,3)} \\ 
+#    1 \text{ if {j,k,l} is an even permutation of (1,2,3)} \\
 #   -1 \text{ if {j,k,l} is  an odd permutation of (1,2,3)} \\
 #    0 \text{ if any two of {j,k,l} are equal} \\
 # \end{array}
-# \right.$ e.g $\epsilon_{3,2,1}$ = -1 and $\epsilon _{2,1,2}$ = 0. 
-# The commutation relations for the basis ${F_1,F_2,F_3}$ for SO(3)  
+# \right.$ e.g $\epsilon_{3,2,1}$ = -1 and $\epsilon _{2,1,2}$ = 0.
+# The commutation relations for the basis ${F_1,F_2,F_3}$ for SO(3)
 # may be written(using the summation convention!) as
 # $[F_j,F_k]$ = $\epsilon_{j,k,l}F_l$ i.e. if we take j=1 and k=2, then the sum on $\ell$
-# gives a nonzero value only when $\ell$ = 3, and we recover the relation $[F_1,F_2]$ = $F_3$  
-# Invariant - The density $\nu$ is irreducible under translations in the real directions  
-# Polarization - The set of directions in which the elements of the quantum subspace are covariantly constant  
-# Covariant derivative - A conection $\nabla$ operator for a vector field  
-# Integrability - Two complex vector fields X and Y lie in $P_z$ at each point z, then so does [X,Y]  
-# Hermitian line bundle $\longrightarrow$ (L,$\nabla$) connection of $L^{{\otimes}{k}}$ having a curvature $\frac{\omega}{\hbar}$ for any positive integer n(things behave nicely when k tends to $\infty$)  
-# Half-form space $\longrightarrow$ s = ($\psi$ $\circ$ q ) $\otimes$ $\sqrt{q^*(\beta)}$  
+# gives a nonzero value only when $\ell$ = 3, and we recover the relation $[F_1,F_2]$ = $F_3$
+# Invariant - The density $\nu$ is irreducible under translations in the real directions
+# Polarization - The set of directions in which the elements of the quantum subspace are covariantly constant
+# Covariant derivative - A conection $\nabla$ operator for a vector field
+# Integrability - Two complex vector fields X and Y lie in $P_z$ at each point z, then so does [X,Y]
+# Hermitian line bundle $\longrightarrow$ (L,$\nabla$) connection of $L^{{\otimes}{k}}$ having a curvature $\frac{\omega}{\hbar}$ for any positive integer n(things behave nicely when k tends to $\infty$)
+# Half-form space $\longrightarrow$ s = ($\psi$ $\circ$ q ) $\otimes$ $\sqrt{q^*(\beta)}$
 # A measurable function $\psi$: X $\longrightarrow$ $\mathbb C$ is said to be integrable,
-# if $\int_X$ |$\psi$| d$\mu$ < $\infty$    
+# if $\int_X$ |$\psi$| d$\mu$ < $\infty$
 # Density of $\mu$ w.r.t. $\nu$ $\longrightarrow$ $\mu$(E) = $\int_E$ $\rho$ d$\mu$ $\forall$ E $\in$ $\omega$,
-# supposing $\mu$ and $\nu$ are two $\sigma$-finite measures on a measure space(X,$\Omega$), 
-# and that $\mu$ is absolutely continuos w.r.t. $\nu$: then there exists a non-negative, measurable function $\rho$ on X.  
+# supposing $\mu$ and $\nu$ are two $\sigma$-finite measures on a measure space(X,$\Omega$),
+# and that $\mu$ is absolutely continuos w.r.t. $\nu$: then there exists a non-negative, measurable function $\rho$ on X.
 # Monotone class $\longrightarrow$ Suppose $\mathscr M$ is a monotone class of subsets of a set X, and suppose $\mathscr M$ contains an
-# algebra $\mathscr A$ of subsets X, then $\mathscr M$ contain the $\sigma$-algebra generated by $\mathscr A$  
-# Dirac $\delta$ function $\longrightarrow$ $\delta_\chi$ = $\chi$(0),  
+# algebra $\mathscr A$ of subsets X, then $\mathscr M$ contain the $\sigma$-algebra generated by $\mathscr A$
+# Dirac $\delta$ function $\longrightarrow$ $\delta_\chi$ = $\chi$(0),
 #     roughly $\delta$(x - X) = $\left\{
 #     \begin{array}{ll}
 #     \infty \text{ if x = X} \\
 #     0      \text{ otherwise} \\
 #     \end{array} \\
-#     \right.$  
-# If $\Vert \cdot \Vert$: V $\longrightarrow$ $\mathbb R$, then $\Vert \psi \Vert$ = $\sqrt{\langle \psi,\psi \rangle}$, 
-# $\Vert \cdot \Vert$ is a norm on V  
-# Hilbert space $\longrightarrow$ A vector space $\mathscr H$ over $\mathbb R$ or $\mathbb C$, equipped with an inner product $\langle \cdot, \cdot \rangle$,  
-#  such that $\mathscr H$ is complete in the norm above.       
+#     \right.$
+# If $\Vert \cdot \Vert$: V $\longrightarrow$ $\mathbb R$, then $\Vert \psi \Vert$ = $\sqrt{\langle \psi,\psi \rangle}$,
+# $\Vert \cdot \Vert$ is a norm on V
+# Hilbert space $\longrightarrow$ A vector space $\mathscr H$ over $\mathbb R$ or $\mathbb C$, equipped with an inner product $\langle \cdot, \cdot \rangle$,
+#  such that $\mathscr H$ is complete in the norm above.
 #  [For a seperable infinite dimensional $\mathscr H$, the partially ordered set of all questions in QM(Quantum Mechanics), is isomorphic
-#  to the partially ordered set of all closed sub-spaces].  
+#  to the partially ordered set of all closed sub-spaces].
 # Orthogonal space $\longrightarrow$ If V is any closed subspace of $\mathscr H$, a subspace $V^\perp$ of $\mathscr H$, is
-# $V^\perp$ = {$\phi$ $\in \mathscr H$|$\langle \phi, \psi \rangle$ = 0 $\forall$ $\psi$ $\in$ V}  
-# Skew-self-adjoint $\longrightarrow$ $A^*$ = - A (one-parameter group of orthogonal/unitary transformation) 
+# $V^\perp$ = {$\phi$ $\in \mathscr H$|$\langle \phi, \psi \rangle$ = 0 $\forall$ $\psi$ $\in$ V}
+# Skew-self-adjoint $\longrightarrow$ $A^*$ = - A (one-parameter group of orthogonal/unitary transformation)
 # Orthogonal projection $\longrightarrow$ For a closed subspace V, where V = range(P), P is the projection if it is any bounded operator
-# on $\mathscr H$ satisfying $P^2$ = P, and $P^*$ = P  
-# A definite state(random sequence) $\longrightarrow$  $\Vert \bar{\sigma}_z^{N} | \psi \Vert^2$ = $\frac{1}{N^2}$$\langle \psi|$$\sum_{r=1}^N$$\sum_{s=1}^N$$\sigma_z^{(r)}\sigma_z^{(s)}|\psi \rangle$  
-# $\langle \psi | \sigma_z^{(r)} \sigma_z^{(s)} | \psi \rangle$ = $\delta^{rs}$  
-# $\implies$ $\lim_{N \to \infty}$$\Vert \bar{\sigma_z}^{N} \Vert^2$ = $\lim_{N \to \infty}$$\frac{1}{N^2}$N = 0  
-# Likewise for $\bar{\sigma}_z^a$ etc.  
+# on $\mathscr H$ satisfying $P^2$ = P, and $P^*$ = P
+# A definite state(random sequence) $\longrightarrow$  $\Vert \bar{\sigma}_z^{N} | \psi \Vert^2$ = $\frac{1}{N^2}$$\langle \psi|$$\sum_{r=1}^N$$\sum_{s=1}^N$$\sigma_z^{(r)}\sigma_z^{(s)}|\psi \rangle$
+# $\langle \psi | \sigma_z^{(r)} \sigma_z^{(s)} | \psi \rangle$ = $\delta^{rs}$
+# $\implies$ $\lim_{N \to \infty}$$\Vert \bar{\sigma_z}^{N} \Vert^2$ = $\lim_{N \to \infty}$$\frac{1}{N^2}$N = 0
+# Likewise for $\bar{\sigma}_z^a$ etc.
 # Zorn's Lemma $\longrightarrow$ Let P be a set of elements a,b...Suppose there is a binary relation defined between certain pairs (a,b) of elements P,
 # expressed by a $\prec$ b, with the properties:  $\left\{
 #             \begin{array}{ll}
@@ -360,99 +360,99 @@ plt.show()
 #             \text{ if a $\prec$ b and b $\prec$ a, then a = b,} \\
 #             \text{ if a $\prec$ b and b $\prec$ c, then a $\prec$ c(transitivity)} \\
 #             \end{array} \\
-#             \right.$  Then P is said to be **partially ordered**(or semi-ordered) by the relation $\prec$.  
-# Curl $\longrightarrow$ Measure of the rotation in the vector field about the points in the direction of the normal vector $\mathbf N$, and 
+#             \right.$  Then P is said to be **partially ordered**(or semi-ordered) by the relation $\prec$.
+# Curl $\longrightarrow$ Measure of the rotation in the vector field about the points in the direction of the normal vector $\mathbf N$, and
 # Stokes' theorem justifies this interpretation.
-# Ampere's Law(line integral along a closed path) $\longrightarrow$ $\oint \mathbf B \cdot d \mathbf l$ = $\mu_0 \mathbf l_{encl}$, 
-# where $\mu_0$ is the magnetic constant, and $l_{encl}$ is the net current enclosed by the path.  
-# Equipartition principle $\longrightarrow$ E = $\frac{3}{2}kT$, where k is the Boltzmans' constant.  
+# Ampere's Law(line integral along a closed path) $\longrightarrow$ $\oint \mathbf B \cdot d \mathbf l$ = $\mu_0 \mathbf l_{encl}$,
+# where $\mu_0$ is the magnetic constant, and $l_{encl}$ is the net current enclosed by the path.
+# Equipartition principle $\longrightarrow$ E = $\frac{3}{2}kT$, where k is the Boltzmans' constant.
 # Ground state/equilibrium position $\longrightarrow$ An electron in a stable innermost orbit/lowest energy state(most negative), and cannot fall into the nucleus.
-# (It's positive definite at its' local minimum, hence its' energy is $\frac{\hbar \omega}{2 \pi}$ at 0). The equality $\frac{\hbar \omega}{2 \pi}$ is the minimum energy.( $\psi_0$(x) = $(2 \pi \sigma^2)^{- \frac{1}{4}}$$e^{- \frac{x^2}{4 \sigma^2}}$, with $\sigma^2$ = $\frac{\hbar}{2m \omega}$, and E = $\frac{\hbar \omega}{2}$).  
-# Pauli exclusion principle $\longrightarrow$ No two or more electrons in an atom, can have the same value, for any of the four quantum numbers.  
-# Self-adjoint $\longrightarrow$ $T(F(\phi), \psi)$ = $T(F(\psi), \phi)$ = $T(\phi, F(\psi))$  
-# Eigenvalue equation $\longrightarrow$ An equation, where the operator, operating on a function, produces a constant, times the function. [The function is called 
-# an Eigenfunction, and the resulting numeric is called the Eigenvalue]. Eigen here is the German word meaning self, or own.               
-# Hamiltonian energy(discrete) $\longrightarrow$ $\hat {\mathbf H}$ = $\frac{1}{2} m \omega^2_c \hat {r}^2_c$: This is the kinetic energy of 
-# a particle of mass m with cyclotron frequency $\omega_c$, and radius $\hat {\mathbf {r}_c}$  
+# (It's positive definite at its' local minimum, hence its' energy is $\frac{\hbar \omega}{2 \pi}$ at 0). The equality $\frac{\hbar \omega}{2 \pi}$ is the minimum energy.( $\psi_0$(x) = $(2 \pi \sigma^2)^{- \frac{1}{4}}$$e^{- \frac{x^2}{4 \sigma^2}}$, with $\sigma^2$ = $\frac{\hbar}{2m \omega}$, and E = $\frac{\hbar \omega}{2}$).
+# Pauli exclusion principle $\longrightarrow$ No two or more electrons in an atom, can have the same value, for any of the four quantum numbers.
+# Self-adjoint $\longrightarrow$ $T(F(\phi), \psi)$ = $T(F(\psi), \phi)$ = $T(\phi, F(\psi))$
+# Eigenvalue equation $\longrightarrow$ An equation, where the operator, operating on a function, produces a constant, times the function. [The function is called
+# an Eigenfunction, and the resulting numeric is called the Eigenvalue]. Eigen here is the German word meaning self, or own.
+# Hamiltonian energy(discrete) $\longrightarrow$ $\hat {\mathbf H}$ = $\frac{1}{2} m \omega^2_c \hat {r}^2_c$: This is the kinetic energy of
+# a particle of mass m with cyclotron frequency $\omega_c$, and radius $\hat {\mathbf {r}_c}$
 # Dirac equation $\longrightarrow$ $i \hbar$ $\frac{\partial \psi}{\partial t}$ = $ \left[ c {\mathbf \alpha} \cdot \hat {\mathbf p} + \frac{e}{c} {\mathbf A} + {\beta m} {c^2} + V(r) \right]$ $\psi$,
 # where the coupling of the electron to the scalar potential $\Phi(r)$ is included via V(r) = ${- e \Phi(r)}$.
-# Gibbs Inequality $\longrightarrow$ $H(f_1,...,f_n)$ $\leq$ ${- \sum_{j=1}^{m} f_j log(u_j)}$  
-# Projection-valued measure associated with f(A) $\longrightarrow$ f(A')  
-# [ f(A) is the self-adjoint operator, corresponding to the observable f(A') ].  
-# $E \longrightarrow$ $P^{A}_{f^{-1}(E)}$. [Note that the operators corresponding to the energy and momentum observables of a                                          
-# quantum system are obtainable as infinitesimal generators of certain one-parameter groups of unitary operators].                                                                         
+# Gibbs Inequality $\longrightarrow$ $H(f_1,...,f_n)$ $\leq$ ${- \sum_{j=1}^{m} f_j log(u_j)}$
+# Projection-valued measure associated with f(A) $\longrightarrow$ f(A')
+# [ f(A) is the self-adjoint operator, corresponding to the observable f(A') ].
+# $E \longrightarrow$ $P^{A}_{f^{-1}(E)}$. [Note that the operators corresponding to the energy and momentum observables of a
+# quantum system are obtainable as infinitesimal generators of certain one-parameter groups of unitary operators].
 # Eigenvector of a self-adjoint operator $\longrightarrow$ A state in which the corresponding observable takes
-# on the corresponding Eigenvalue with probability $\mathbb 1$.  
-# Von Neumann density matrix $\longrightarrow$ The matrix of an operator defining a mixed state.  
-# Differentiable function $\psi (Schr\ddot{o}dingers' equation)$ $\longrightarrow$ $\frac{\partial^2 \psi}{\partial x^2}$ + $\frac{\partial^2 \psi}{\partial y^2}$ + $\frac{\partial^2 \psi}{\partial z^2}$ +$\frac{2m}{\hbar^2}$$\left(\mathbf E + \frac{e^2}{\sqrt{x^2 + y^2 + z^2}}\right)$ = 0, with $\hbar$ = $\mathbf K$.  
-# Canonical commutation relation $\longrightarrow$ [$\hat X. \hat P$] = $i \hbar \delta_{ij}$, i,j = x,y,z  
+# on the corresponding Eigenvalue with probability $\mathbb 1$.
+# Von Neumann density matrix $\longrightarrow$ The matrix of an operator defining a mixed state.
+# Differentiable function $\psi (Schr\ddot{o}dingers' equation)$ $\longrightarrow$ $\frac{\partial^2 \psi}{\partial x^2}$ + $\frac{\partial^2 \psi}{\partial y^2}$ + $\frac{\partial^2 \psi}{\partial z^2}$ +$\frac{2m}{\hbar^2}$$\left(\mathbf E + \frac{e^2}{\sqrt{x^2 + y^2 + z^2}}\right)$ = 0, with $\hbar$ = $\mathbf K$.
+# Canonical commutation relation $\longrightarrow$ [$\hat X. \hat P$] = $i \hbar \delta_{ij}$, i,j = x,y,z
 # Heisenberg commutation relation $\longrightarrow$ $(X_{\phi_1}, X_{\phi_2} - X_{\phi_2}, X_{\phi_1})$ = $(\frac{\hbar}{i})$[$f_{\phi_1}, f_{\phi_2}]$,
-# where $f_\phi$ is an observable, and $X_\phi$ the self-adjoint operator.  
-# Discrete $\longrightarrow$ A representation which can be decomposed as a direct sum of irreducibles.  
+# where $f_\phi$ is an observable, and $X_\phi$ the self-adjoint operator.
+# Discrete $\longrightarrow$ A representation which can be decomposed as a direct sum of irreducibles.
 # Schurs' Lemma(only true in $\mathbb C$ representations, NOT $\mathbb R$ vector spaces) $\longrightarrow$ Let T be $\in$ R(L,M), then L restricted to the orthogonal complement of the null space
-# of T, is $\equiv$ to M restricted to the closure of the range of T.  
-# Degeneracy $\longrightarrow$ Occurrence of multiple eigenvalues/states sharing the same energy.  
-# Zeeman effect $\longrightarrow$ Splitting apart of eigenvalues, hence of spectral lines, in a magnetic field.  
+# of T, is $\equiv$ to M restricted to the closure of the range of T.
+# Degeneracy $\longrightarrow$ Occurrence of multiple eigenvalues/states sharing the same energy.
+# Zeeman effect $\longrightarrow$ Splitting apart of eigenvalues, hence of spectral lines, in a magnetic field.
 # Kronocker delta $\longrightarrow$ $\delta_{ij}$ = $\left\{
 #                                                   \begin{array}{ll}
 #                                                   1 \text{ if i = j}  \\
 #                                                   0 \text{ if i $\neq$ j} \\
 #                                                   \end{array} \\
-#                                                   \right.$  
+#                                                   \right.$
 # Tensor/Kronecker product of two spin one-half state space[needed to calculate the hyperfine splitting in the Hydrogen atom]
-# $\longrightarrow$ $ | 0, 0 \rangle$ =  
-# $\frac{1}{\sqrt 2}$ $\left( | \uparrow \rangle_1 \otimes | \downarrow \rangle_2 -  | \downarrow \rangle_1 |  \otimes \uparrow_2 \right)$ = $\frac{1}{\sqrt 2}$ $\left( | \uparrow \downarrow \rangle - | \downarrow \uparrow \rangle \right)$  
-# Clebsch-Gordan coefficients(expansion)/vector coupling/Wigner $\longrightarrow$ $ | J,M \rangle$ = $\sum_{m_1 = {-j_1}}^{j_1}$ $\sum_{m_2 = {-j_2}}^{j_2} \langle{JM} | {m_1,m_2} \rangle \langle{m_1,m_2} |J ',M' \rangle$ = $\delta_{jj'}$ $\delta_{MM'}$  
-# Hydrogen hyperfine split $\longrightarrow$ **Energy shift/difference** of the lowest antiparallel state of the spin of the protons' magnetic moment and the electrons' magnetic field, pointing in the same direction(corresponds to the fine-structure splitting).  
-# Collision broadening $\longrightarrow$ Distortion of an emitted wave during radiation, thus smearing the spectral line.  
-# Inner product $\longrightarrow$ <A|B> = $\frac{1}{2}tr(A,B^\dagger)$  
-# Entanglement $\longrightarrow$ A Bell state that cannot be expressed as a tensor product of a single qubit state with another single qubit state.  
-# No cloning theorem $\longrightarrow$ One cannot create a copy of quantum states, although teleporting is permitted.  
-# Teleportation $\longrightarrow$ Same quantum state in different locations.  
+# $\longrightarrow$ $ | 0, 0 \rangle$ =
+# $\frac{1}{\sqrt 2}$ $\left( | \uparrow \rangle_1 \otimes | \downarrow \rangle_2 -  | \downarrow \rangle_1 |  \otimes \uparrow_2 \right)$ = $\frac{1}{\sqrt 2}$ $\left( | \uparrow \downarrow \rangle - | \downarrow \uparrow \rangle \right)$
+# Clebsch-Gordan coefficients(expansion)/vector coupling/Wigner $\longrightarrow$ $ | J,M \rangle$ = $\sum_{m_1 = {-j_1}}^{j_1}$ $\sum_{m_2 = {-j_2}}^{j_2} \langle{JM} | {m_1,m_2} \rangle \langle{m_1,m_2} |J ',M' \rangle$ = $\delta_{jj'}$ $\delta_{MM'}$
+# Hydrogen hyperfine split $\longrightarrow$ **Energy shift/difference** of the lowest antiparallel state of the spin of the protons' magnetic moment and the electrons' magnetic field, pointing in the same direction(corresponds to the fine-structure splitting).
+# Collision broadening $\longrightarrow$ Distortion of an emitted wave during radiation, thus smearing the spectral line.
+# Inner product $\longrightarrow$ <A|B> = $\frac{1}{2}tr(A,B^\dagger)$
+# Entanglement $\longrightarrow$ A Bell state that cannot be expressed as a tensor product of a single qubit state with another single qubit state.
+# No cloning theorem $\longrightarrow$ One cannot create a copy of quantum states, although teleporting is permitted.
+# Teleportation $\longrightarrow$ Same quantum state in different locations.
 # Quantum Harmonic Oscillator $\longrightarrow$ $\hat H$ = $\hbar \omega$  $\left(\hat {a}^\dagger \hat {a} + \frac{1}{2} \right)$ = $\hbar \omega$$\left(\hat N + \frac{1}{2} \right)$, where $\hat {a}$ = ${\sqrt \frac{m \omega}{2 \hbar}}$$\left( \hat x + \frac{i}{m \omega} \hat p \right)$;
 # $\hat {a}^\dagger$ = ${\sqrt \frac{m \omega}{2 \hbar}}$$\left( \hat x - \frac{i}{m \omega} \hat p \right)$, and
-# $\hat N$ = $\hat {a}^\dagger \hat a$ = $\frac{m \omega}{2 \hbar}$$\left(\hat x - \frac{i}{m \omega} \hat p \right)$ $ \left( \hat x + \frac{i}{m \omega} \hat p \right)$  
-# Flux quantum(a dimensionless quantity) $\longrightarrow$ $\Phi$ = $\frac{\hbar}{2e}$, where 2e is the charge of the electron(Cooper pairs).      
+# $\hat N$ = $\hat {a}^\dagger \hat a$ = $\frac{m \omega}{2 \hbar}$$\left(\hat x - \frac{i}{m \omega} \hat p \right)$ $ \left( \hat x + \frac{i}{m \omega} \hat p \right)$
+# Flux quantum(a dimensionless quantity) $\longrightarrow$ $\Phi$ = $\frac{\hbar}{2e}$, where 2e is the charge of the electron(Cooper pairs).
 # Von Neumann equation $\longrightarrow$ $\partial_t$$\rho(t)$ = $- {\frac{i}{\hbar}}$$[H,\rho(t)]$, where $\rho$ is the density matrix, and H is the Hamiltonian;
-# similar to the Schr$\ddot{o}dinger$ equation, $i\hbar \partial_t \rho(t)$ = $[H, \rho(t)]$(describes the time evolution of the denity operator)  
-# Resolution of an identity $\longrightarrow$ $\sum_{k_0} \sum_{\mathbf k_1}$$<k_0|A_0| {\mathbf k_1}><{\mathbf k_1}|A_1|k_0>$    
-#     
-#                        
-#     
-#     
-#     
-#     
-#                                                    
-#     
-#     
-#                                                     
-#                                
-#                                
-#                                
-#                                
-#                                
-#                                                                        
-#                                                                        
-#  
-#                                                                
-#                                                                             
-#  
-#     
-#     
-#     
-#     
-#     
-#     
-#         
-#     
-#     
-#     
-#     
-#     
-#     
-#     
-#     
-#     
+# similar to the Schr$\ddot{o}dinger$ equation, $i\hbar \partial_t \rho(t)$ = $[H, \rho(t)]$(describes the time evolution of the denity operator)
+# Resolution of an identity $\longrightarrow$ $\sum_{k_0} \sum_{\mathbf k_1}$$<k_0|A_0| {\mathbf k_1}><{\mathbf k_1}|A_1|k_0>$
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
 # 
 # 
 # 
